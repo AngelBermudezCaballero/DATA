@@ -1,0 +1,601 @@
+provisional	rama	anio	orden_mes	mes	medida	valor	orden_medida
+	Venta de motocicletas	2022	1	Enero	Facturación (Miles de €)	80.56	
+	Venta de automóviles	2022	1	Enero	Facturación (Miles de €)	89.77	
+	Mantenimiento y reparación de motocicletas	2022	1	Enero	Facturación (Miles de €)	59.03	
+	Mantenimiento y reparación de automóviles	2022	1	Enero	Facturación (Miles de €)	53.67	
+	Comercio de repuestos y accesorios de motocicletas	2022	1	Enero	Facturación (Miles de €)	75.44	
+	Comercio de repuestos y accesorios de automóviles	2022	1	Enero	Facturación (Miles de €)	69.39	
+	Venta de motocicletas	2022	2	Febrero	Facturación (Miles de €)	55.35	
+	Venta de automóviles	2022	2	Febrero	Facturación (Miles de €)	95.82	
+	Mantenimiento y reparación de motocicletas	2022	2	Febrero	Facturación (Miles de €)	87.9	
+	Mantenimiento y reparación de automóviles	2022	2	Febrero	Facturación (Miles de €)	71.04	
+	Comercio de repuestos y accesorios de motocicletas	2022	2	Febrero	Facturación (Miles de €)	94.13	
+	Comercio de repuestos y accesorios de automóviles	2022	2	Febrero	Facturación (Miles de €)	97.17	
+	Venta de motocicletas	2022	3	Marzo	Facturación (Miles de €)	84.05	
+	Venta de automóviles	2022	3	Marzo	Facturación (Miles de €)	91.29	
+	Mantenimiento y reparación de motocicletas	2022	3	Marzo	Facturación (Miles de €)	93.83	
+	Mantenimiento y reparación de automóviles	2022	3	Marzo	Facturación (Miles de €)	88.39	
+	Comercio de repuestos y accesorios de motocicletas	2022	3	Marzo	Facturación (Miles de €)	73.82	
+	Comercio de repuestos y accesorios de automóviles	2022	3	Marzo	Facturación (Miles de €)	80.24	
+	Venta de motocicletas	2022	4	Abril	Facturación (Miles de €)	85.01	
+	Venta de automóviles	2022	4	Abril	Facturación (Miles de €)	90.27	
+	Mantenimiento y reparación de motocicletas	2022	4	Abril	Facturación (Miles de €)	94.34	
+	Mantenimiento y reparación de automóviles	2022	4	Abril	Facturación (Miles de €)	73.73	
+	Comercio de repuestos y accesorios de motocicletas	2022	4	Abril	Facturación (Miles de €)	78.27	
+	Comercio de repuestos y accesorios de automóviles	2022	4	Abril	Facturación (Miles de €)	80.84	
+	Venta de motocicletas	2022	5	Mayo	Facturación (Miles de €)	77.26	
+	Venta de automóviles	2022	5	Mayo	Facturación (Miles de €)	97.96	
+	Mantenimiento y reparación de motocicletas	2022	5	Mayo	Facturación (Miles de €)	88.8	
+	Mantenimiento y reparación de automóviles	2022	5	Mayo	Facturación (Miles de €)	66.8	
+	Comercio de repuestos y accesorios de motocicletas	2022	5	Mayo	Facturación (Miles de €)	92.23	
+	Comercio de repuestos y accesorios de automóviles	2022	5	Mayo	Facturación (Miles de €)	98.02	
+	Venta de motocicletas	2022	6	Junio	Facturación (Miles de €)	52.58	
+	Venta de automóviles	2022	6	Junio	Facturación (Miles de €)	85.18	
+	Mantenimiento y reparación de motocicletas	2022	6	Junio	Facturación (Miles de €)	69.04	
+	Mantenimiento y reparación de automóviles	2022	6	Junio	Facturación (Miles de €)	73.58	
+	Comercio de repuestos y accesorios de motocicletas	2022	6	Junio	Facturación (Miles de €)	65.05	
+	Comercio de repuestos y accesorios de automóviles	2022	6	Junio	Facturación (Miles de €)	94.73	
+	Venta de motocicletas	2022	7	Julio	Facturación (Miles de €)	59.78	
+	Venta de automóviles	2022	7	Julio	Facturación (Miles de €)	94.23	
+	Mantenimiento y reparación de motocicletas	2022	7	Julio	Facturación (Miles de €)	65.63	
+	Mantenimiento y reparación de automóviles	2022	7	Julio	Facturación (Miles de €)	98.14	
+	Comercio de repuestos y accesorios de motocicletas	2022	7	Julio	Facturación (Miles de €)	93.34	
+	Comercio de repuestos y accesorios de automóviles	2022	7	Julio	Facturación (Miles de €)	86.62	
+	Venta de motocicletas	2022	8	Agosto	Facturación (Miles de €)	71.48	
+	Venta de automóviles	2022	8	Agosto	Facturación (Miles de €)	50.4	
+	Mantenimiento y reparación de motocicletas	2022	8	Agosto	Facturación (Miles de €)	98.85	
+	Mantenimiento y reparación de automóviles	2022	8	Agosto	Facturación (Miles de €)	91.62	
+	Comercio de repuestos y accesorios de motocicletas	2022	8	Agosto	Facturación (Miles de €)	78.85	
+	Comercio de repuestos y accesorios de automóviles	2022	8	Agosto	Facturación (Miles de €)	71.51	
+	Venta de motocicletas	2022	9	Septiembre	Facturación (Miles de €)	85.39	
+	Venta de automóviles	2022	9	Septiembre	Facturación (Miles de €)	71.94	
+	Mantenimiento y reparación de motocicletas	2022	9	Septiembre	Facturación (Miles de €)	80.19	
+	Mantenimiento y reparación de automóviles	2022	9	Septiembre	Facturación (Miles de €)	78.36	
+	Comercio de repuestos y accesorios de motocicletas	2022	9	Septiembre	Facturación (Miles de €)	51.73	
+	Comercio de repuestos y accesorios de automóviles	2022	9	Septiembre	Facturación (Miles de €)	75.09	
+	Venta de motocicletas	2022	10	Octubre	Facturación (Miles de €)	54.31	
+	Venta de automóviles	2022	10	Octubre	Facturación (Miles de €)	70.87	
+	Mantenimiento y reparación de motocicletas	2022	10	Octubre	Facturación (Miles de €)	56.48	
+	Mantenimiento y reparación de automóviles	2022	10	Octubre	Facturación (Miles de €)	77.9	
+	Comercio de repuestos y accesorios de motocicletas	2022	10	Octubre	Facturación (Miles de €)	66.02	
+	Comercio de repuestos y accesorios de automóviles	2022	10	Octubre	Facturación (Miles de €)	98.55	
+	Venta de motocicletas	2022	11	Noviembre	Facturación (Miles de €)	70.43	
+	Venta de automóviles	2022	11	Noviembre	Facturación (Miles de €)	95.52	
+	Mantenimiento y reparación de motocicletas	2022	11	Noviembre	Facturación (Miles de €)	70.92	
+	Mantenimiento y reparación de automóviles	2022	11	Noviembre	Facturación (Miles de €)	92.9	
+	Comercio de repuestos y accesorios de motocicletas	2022	11	Noviembre	Facturación (Miles de €)	58.71	
+	Comercio de repuestos y accesorios de automóviles	2022	11	Noviembre	Facturación (Miles de €)	69.05	
+	Venta de motocicletas	2022	12	Diciembre	Facturación (Miles de €)	79.08	
+	Venta de automóviles	2022	12	Diciembre	Facturación (Miles de €)	87.39	
+	Mantenimiento y reparación de motocicletas	2022	12	Diciembre	Facturación (Miles de €)	60.36	
+	Mantenimiento y reparación de automóviles	2022	12	Diciembre	Facturación (Miles de €)	76.33	
+	Comercio de repuestos y accesorios de motocicletas	2022	12	Diciembre	Facturación (Miles de €)	77.18	
+	Comercio de repuestos y accesorios de automóviles	2022	12	Diciembre	Facturación (Miles de €)	56.1	
+	Venta de motocicletas	2023	1	Enero	Facturación (Miles de €)	63.07	
+	Venta de automóviles	2023	1	Enero	Facturación (Miles de €)	55.91	
+	Mantenimiento y reparación de motocicletas	2023	1	Enero	Facturación (Miles de €)	88.86	
+	Mantenimiento y reparación de automóviles	2023	1	Enero	Facturación (Miles de €)	55.44	
+	Comercio de repuestos y accesorios de motocicletas	2023	1	Enero	Facturación (Miles de €)	81.19	
+	Comercio de repuestos y accesorios de automóviles	2023	1	Enero	Facturación (Miles de €)	82.1	
+	Venta de motocicletas	2023	2	Febrero	Facturación (Miles de €)	55.0	
+	Venta de automóviles	2023	2	Febrero	Facturación (Miles de €)	77.31	
+	Mantenimiento y reparación de motocicletas	2023	2	Febrero	Facturación (Miles de €)	87.33	
+	Mantenimiento y reparación de automóviles	2023	2	Febrero	Facturación (Miles de €)	62.97	
+	Comercio de repuestos y accesorios de motocicletas	2023	2	Febrero	Facturación (Miles de €)	77.66	
+	Comercio de repuestos y accesorios de automóviles	2023	2	Febrero	Facturación (Miles de €)	54.75	
+	Venta de motocicletas	2023	3	Marzo	Facturación (Miles de €)	86.63	
+	Venta de automóviles	2023	3	Marzo	Facturación (Miles de €)	62.49	
+	Mantenimiento y reparación de motocicletas	2023	3	Marzo	Facturación (Miles de €)	57.11	
+	Mantenimiento y reparación de automóviles	2023	3	Marzo	Facturación (Miles de €)	68.01	
+	Comercio de repuestos y accesorios de motocicletas	2023	3	Marzo	Facturación (Miles de €)	59.66	
+	Comercio de repuestos y accesorios de automóviles	2023	3	Marzo	Facturación (Miles de €)	86.99	
+	Venta de motocicletas	2023	4	Abril	Facturación (Miles de €)	50.26	
+	Venta de automóviles	2023	4	Abril	Facturación (Miles de €)	98.76	
+	Mantenimiento y reparación de motocicletas	2023	4	Abril	Facturación (Miles de €)	85.43	
+	Mantenimiento y reparación de automóviles	2023	4	Abril	Facturación (Miles de €)	93.72	
+	Comercio de repuestos y accesorios de motocicletas	2023	4	Abril	Facturación (Miles de €)	66.91	
+	Comercio de repuestos y accesorios de automóviles	2023	4	Abril	Facturación (Miles de €)	86.19	
+	Venta de motocicletas	2023	5	Mayo	Facturación (Miles de €)	95.65	
+	Venta de automóviles	2023	5	Mayo	Facturación (Miles de €)	96.1	
+	Mantenimiento y reparación de motocicletas	2023	5	Mayo	Facturación (Miles de €)	62.71	
+	Mantenimiento y reparación de automóviles	2023	5	Mayo	Facturación (Miles de €)	61.79	
+	Comercio de repuestos y accesorios de motocicletas	2023	5	Mayo	Facturación (Miles de €)	67.59	
+	Comercio de repuestos y accesorios de automóviles	2023	5	Mayo	Facturación (Miles de €)	98.37	
+	Venta de motocicletas	2023	6	Junio	Facturación (Miles de €)	91.64	
+	Venta de automóviles	2023	6	Junio	Facturación (Miles de €)	69.02	
+	Mantenimiento y reparación de motocicletas	2023	6	Junio	Facturación (Miles de €)	59.78	
+	Mantenimiento y reparación de automóviles	2023	6	Junio	Facturación (Miles de €)	71.9	
+	Comercio de repuestos y accesorios de motocicletas	2023	6	Junio	Facturación (Miles de €)	72.92	
+	Comercio de repuestos y accesorios de automóviles	2023	6	Junio	Facturación (Miles de €)	56.37	
+	Venta de motocicletas	2023	7	Julio	Facturación (Miles de €)	97.18	
+	Venta de automóviles	2023	7	Julio	Facturación (Miles de €)	76.97	
+	Mantenimiento y reparación de motocicletas	2023	7	Julio	Facturación (Miles de €)	70.8	
+	Mantenimiento y reparación de automóviles	2023	7	Julio	Facturación (Miles de €)	74.79	
+	Comercio de repuestos y accesorios de motocicletas	2023	7	Julio	Facturación (Miles de €)	97.81	
+	Comercio de repuestos y accesorios de automóviles	2023	7	Julio	Facturación (Miles de €)	66.62	
+	Venta de motocicletas	2023	8	Agosto	Facturación (Miles de €)	62.66	
+	Venta de automóviles	2023	8	Agosto	Facturación (Miles de €)	90.55	
+	Mantenimiento y reparación de motocicletas	2023	8	Agosto	Facturación (Miles de €)	96.76	
+	Mantenimiento y reparación de automóviles	2023	8	Agosto	Facturación (Miles de €)	81.53	
+	Comercio de repuestos y accesorios de motocicletas	2023	8	Agosto	Facturación (Miles de €)	75.3	
+	Comercio de repuestos y accesorios de automóviles	2023	8	Agosto	Facturación (Miles de €)	72.26	
+	Venta de motocicletas	2023	9	Septiembre	Facturación (Miles de €)	58.43	
+	Venta de automóviles	2023	9	Septiembre	Facturación (Miles de €)	97.92	
+	Mantenimiento y reparación de motocicletas	2023	9	Septiembre	Facturación (Miles de €)	57.72	
+	Mantenimiento y reparación de automóviles	2023	9	Septiembre	Facturación (Miles de €)	91.99	
+	Comercio de repuestos y accesorios de motocicletas	2023	9	Septiembre	Facturación (Miles de €)	70.87	
+	Comercio de repuestos y accesorios de automóviles	2023	9	Septiembre	Facturación (Miles de €)	61.57	
+p	Venta de motocicletas	2023	10	Octubre	Facturación (Miles de €)	55.95	
+p	Venta de automóviles	2023	10	Octubre	Facturación (Miles de €)	91.59	
+p	Mantenimiento y reparación de motocicletas	2023	10	Octubre	Facturación (Miles de €)	92.87	
+p	Mantenimiento y reparación de automóviles	2023	10	Octubre	Facturación (Miles de €)	82.51	
+p	Comercio de repuestos y accesorios de motocicletas	2023	10	Octubre	Facturación (Miles de €)	64.56	
+p	Comercio de repuestos y accesorios de automóviles	2023	10	Octubre	Facturación (Miles de €)	51.41	
+p	Venta de motocicletas	2023	11	Noviembre	Facturación (Miles de €)	75.55	
+p	Venta de automóviles	2023	11	Noviembre	Facturación (Miles de €)	98.47	
+p	Mantenimiento y reparación de motocicletas	2023	11	Noviembre	Facturación (Miles de €)	72.76	
+p	Mantenimiento y reparación de automóviles	2023	11	Noviembre	Facturación (Miles de €)	83.65	
+p	Comercio de repuestos y accesorios de motocicletas	2023	11	Noviembre	Facturación (Miles de €)	95.4	
+p	Comercio de repuestos y accesorios de automóviles	2023	11	Noviembre	Facturación (Miles de €)	78.05	
+p	Venta de motocicletas	2023	12	Diciembre	Facturación (Miles de €)	93.32	
+p	Venta de automóviles	2023	12	Diciembre	Facturación (Miles de €)	93.86	
+p	Mantenimiento y reparación de motocicletas	2023	12	Diciembre	Facturación (Miles de €)	90.77	
+p	Mantenimiento y reparación de automóviles	2023	12	Diciembre	Facturación (Miles de €)	67.52	
+p	Comercio de repuestos y accesorios de motocicletas	2023	12	Diciembre	Facturación (Miles de €)	71.61	
+p	Comercio de repuestos y accesorios de automóviles	2023	12	Diciembre	Facturación (Miles de €)	71.76	
+p	Venta de motocicletas	2024	1	Enero	Facturación (Miles de €)	96.64	
+p	Venta de automóviles	2024	1	Enero	Facturación (Miles de €)	70.76	
+p	Mantenimiento y reparación de motocicletas	2024	1	Enero	Facturación (Miles de €)	66.33	
+p	Mantenimiento y reparación de automóviles	2024	1	Enero	Facturación (Miles de €)	70.8	
+p	Comercio de repuestos y accesorios de motocicletas	2024	1	Enero	Facturación (Miles de €)	61.89	
+p	Comercio de repuestos y accesorios de automóviles	2024	1	Enero	Facturación (Miles de €)	81.83	
+	Venta de motocicletas	2022	1	Enero	Variación interanual (%)		3.0
+	Venta de automóviles	2022	1	Enero	Variación interanual (%)		3.0
+	Mantenimiento y reparación de motocicletas	2022	1	Enero	Variación interanual (%)		3.0
+	Mantenimiento y reparación de automóviles	2022	1	Enero	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de motocicletas	2022	1	Enero	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de automóviles	2022	1	Enero	Variación interanual (%)		3.0
+	Venta de motocicletas	2022	2	Febrero	Variación interanual (%)		3.0
+	Venta de automóviles	2022	2	Febrero	Variación interanual (%)		3.0
+	Mantenimiento y reparación de motocicletas	2022	2	Febrero	Variación interanual (%)		3.0
+	Mantenimiento y reparación de automóviles	2022	2	Febrero	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de motocicletas	2022	2	Febrero	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de automóviles	2022	2	Febrero	Variación interanual (%)		3.0
+	Venta de motocicletas	2022	3	Marzo	Variación interanual (%)		3.0
+	Venta de automóviles	2022	3	Marzo	Variación interanual (%)		3.0
+	Mantenimiento y reparación de motocicletas	2022	3	Marzo	Variación interanual (%)		3.0
+	Mantenimiento y reparación de automóviles	2022	3	Marzo	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de motocicletas	2022	3	Marzo	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de automóviles	2022	3	Marzo	Variación interanual (%)		3.0
+	Venta de motocicletas	2022	4	Abril	Variación interanual (%)		3.0
+	Venta de automóviles	2022	4	Abril	Variación interanual (%)		3.0
+	Mantenimiento y reparación de motocicletas	2022	4	Abril	Variación interanual (%)		3.0
+	Mantenimiento y reparación de automóviles	2022	4	Abril	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de motocicletas	2022	4	Abril	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de automóviles	2022	4	Abril	Variación interanual (%)		3.0
+	Venta de motocicletas	2022	5	Mayo	Variación interanual (%)		3.0
+	Venta de automóviles	2022	5	Mayo	Variación interanual (%)		3.0
+	Mantenimiento y reparación de motocicletas	2022	5	Mayo	Variación interanual (%)		3.0
+	Mantenimiento y reparación de automóviles	2022	5	Mayo	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de motocicletas	2022	5	Mayo	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de automóviles	2022	5	Mayo	Variación interanual (%)		3.0
+	Venta de motocicletas	2022	6	Junio	Variación interanual (%)		3.0
+	Venta de automóviles	2022	6	Junio	Variación interanual (%)		3.0
+	Mantenimiento y reparación de motocicletas	2022	6	Junio	Variación interanual (%)		3.0
+	Mantenimiento y reparación de automóviles	2022	6	Junio	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de motocicletas	2022	6	Junio	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de automóviles	2022	6	Junio	Variación interanual (%)		3.0
+	Venta de motocicletas	2022	7	Julio	Variación interanual (%)		3.0
+	Venta de automóviles	2022	7	Julio	Variación interanual (%)		3.0
+	Mantenimiento y reparación de motocicletas	2022	7	Julio	Variación interanual (%)		3.0
+	Mantenimiento y reparación de automóviles	2022	7	Julio	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de motocicletas	2022	7	Julio	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de automóviles	2022	7	Julio	Variación interanual (%)		3.0
+	Venta de motocicletas	2022	8	Agosto	Variación interanual (%)		3.0
+	Venta de automóviles	2022	8	Agosto	Variación interanual (%)		3.0
+	Mantenimiento y reparación de motocicletas	2022	8	Agosto	Variación interanual (%)		3.0
+	Mantenimiento y reparación de automóviles	2022	8	Agosto	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de motocicletas	2022	8	Agosto	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de automóviles	2022	8	Agosto	Variación interanual (%)		3.0
+	Venta de motocicletas	2022	9	Septiembre	Variación interanual (%)		3.0
+	Venta de automóviles	2022	9	Septiembre	Variación interanual (%)		3.0
+	Mantenimiento y reparación de motocicletas	2022	9	Septiembre	Variación interanual (%)		3.0
+	Mantenimiento y reparación de automóviles	2022	9	Septiembre	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de motocicletas	2022	9	Septiembre	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de automóviles	2022	9	Septiembre	Variación interanual (%)		3.0
+	Venta de motocicletas	2022	10	Octubre	Variación interanual (%)		3.0
+	Venta de automóviles	2022	10	Octubre	Variación interanual (%)		3.0
+	Mantenimiento y reparación de motocicletas	2022	10	Octubre	Variación interanual (%)		3.0
+	Mantenimiento y reparación de automóviles	2022	10	Octubre	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de motocicletas	2022	10	Octubre	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de automóviles	2022	10	Octubre	Variación interanual (%)		3.0
+	Venta de motocicletas	2022	11	Noviembre	Variación interanual (%)		3.0
+	Venta de automóviles	2022	11	Noviembre	Variación interanual (%)		3.0
+	Mantenimiento y reparación de motocicletas	2022	11	Noviembre	Variación interanual (%)		3.0
+	Mantenimiento y reparación de automóviles	2022	11	Noviembre	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de motocicletas	2022	11	Noviembre	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de automóviles	2022	11	Noviembre	Variación interanual (%)		3.0
+	Venta de motocicletas	2022	12	Diciembre	Variación interanual (%)		3.0
+	Venta de automóviles	2022	12	Diciembre	Variación interanual (%)		3.0
+	Mantenimiento y reparación de motocicletas	2022	12	Diciembre	Variación interanual (%)		3.0
+	Mantenimiento y reparación de automóviles	2022	12	Diciembre	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de motocicletas	2022	12	Diciembre	Variación interanual (%)		3.0
+	Comercio de repuestos y accesorios de automóviles	2022	12	Diciembre	Variación interanual (%)		3.0
+	Venta de motocicletas	2023	1	Enero	Variación interanual (%)	-21.710526315789476	3.0
+	Venta de automóviles	2023	1	Enero	Variación interanual (%)	-37.71861423638187	3.0
+	Mantenimiento y reparación de motocicletas	2023	1	Enero	Variación interanual (%)	50.53362696933762	3.0
+	Mantenimiento y reparación de automóviles	2023	1	Enero	Variación interanual (%)	3.2979318054779134	3.0
+	Comercio de repuestos y accesorios de motocicletas	2023	1	Enero	Variación interanual (%)	7.621951219512195	3.0
+	Comercio de repuestos y accesorios de automóviles	2023	1	Enero	Variación interanual (%)	18.316760340106633	3.0
+	Venta de motocicletas	2023	2	Febrero	Variación interanual (%)	-0.6323396567299032	3.0
+	Venta de automóviles	2023	2	Febrero	Variación interanual (%)	-19.317470256731365	3.0
+	Mantenimiento y reparación de motocicletas	2023	2	Febrero	Variación interanual (%)	-0.648464163822534	3.0
+	Mantenimiento y reparación de automóviles	2023	2	Febrero	Variación interanual (%)	-11.359797297297307	3.0
+	Comercio de repuestos y accesorios de motocicletas	2023	2	Febrero	Variación interanual (%)	-17.497078508445764	3.0
+	Comercio de repuestos y accesorios de automóviles	2023	2	Febrero	Variación interanual (%)	-43.65544921271998	3.0
+	Venta de motocicletas	2023	3	Marzo	Variación interanual (%)	3.0696014277215924	3.0
+	Venta de automóviles	2023	3	Marzo	Variación interanual (%)	-31.547814656588898	3.0
+	Mantenimiento y reparación de motocicletas	2023	3	Marzo	Variación interanual (%)	-39.1346051369498	3.0
+	Mantenimiento y reparación de automóviles	2023	3	Marzo	Variación interanual (%)	-23.056906889919667	3.0
+	Comercio de repuestos y accesorios de motocicletas	2023	3	Marzo	Variación interanual (%)	-19.181793551882954	3.0
+	Comercio de repuestos y accesorios de automóviles	2023	3	Marzo	Variación interanual (%)	8.412263210368893	3.0
+	Venta de motocicletas	2023	4	Abril	Variación interanual (%)	-40.87754381837431	3.0
+	Venta de automóviles	2023	4	Abril	Variación interanual (%)	9.405117979395158	3.0
+	Mantenimiento y reparación de motocicletas	2023	4	Abril	Variación interanual (%)	-9.44456222175111	3.0
+	Mantenimiento y reparación de automóviles	2023	4	Abril	Variación interanual (%)	27.112437271124364	3.0
+	Comercio de repuestos y accesorios de motocicletas	2023	4	Abril	Variación interanual (%)	-14.513862271623868	3.0
+	Comercio de repuestos y accesorios de automóviles	2023	4	Abril	Variación interanual (%)	6.618010885700142	3.0
+	Venta de motocicletas	2023	5	Mayo	Variación interanual (%)	23.802743981361633	3.0
+	Venta de automóviles	2023	5	Mayo	Variación interanual (%)	-1.8987341772151896	3.0
+	Mantenimiento y reparación de motocicletas	2023	5	Mayo	Variación interanual (%)	-29.380630630630627	3.0
+	Mantenimiento y reparación de automóviles	2023	5	Mayo	Variación interanual (%)	-7.499999999999997	3.0
+	Comercio de repuestos y accesorios de motocicletas	2023	5	Mayo	Variación interanual (%)	-26.715819147782717	3.0
+	Comercio de repuestos y accesorios de automóviles	2023	5	Mayo	Variación interanual (%)	0.35706998571720927	3.0
+	Venta de motocicletas	2023	6	Junio	Variación interanual (%)	74.28680106504375	3.0
+	Venta de automóviles	2023	6	Junio	Variación interanual (%)	-18.97158957501762	3.0
+	Mantenimiento y reparación de motocicletas	2023	6	Junio	Variación interanual (%)	-13.4125144843569	3.0
+	Mantenimiento y reparación de automóviles	2023	6	Junio	Variación interanual (%)	-2.2832291383528034	3.0
+	Comercio de repuestos y accesorios de motocicletas	2023	6	Junio	Variación interanual (%)	12.098385857033058	3.0
+	Comercio de repuestos y accesorios de automóviles	2023	6	Junio	Variación interanual (%)	-40.49403568035469	3.0
+	Venta de motocicletas	2023	7	Julio	Variación interanual (%)	62.5627300100368	3.0
+	Venta de automóviles	2023	7	Julio	Variación interanual (%)	-18.31688421946302	3.0
+	Mantenimiento y reparación de motocicletas	2023	7	Julio	Variación interanual (%)	7.877495047996347	3.0
+	Mantenimiento y reparación de automóviles	2023	7	Julio	Variación interanual (%)	-23.792541267576926	3.0
+	Comercio de repuestos y accesorios de motocicletas	2023	7	Julio	Variación interanual (%)	4.788943646882364	3.0
+	Comercio de repuestos y accesorios de automóviles	2023	7	Julio	Variación interanual (%)	-23.089355806972982	3.0
+	Venta de motocicletas	2023	8	Agosto	Variación interanual (%)	-12.33911583659766	3.0
+	Venta de automóviles	2023	8	Agosto	Variación interanual (%)	79.6626984126984	3.0
+	Mantenimiento y reparación de motocicletas	2023	8	Agosto	Variación interanual (%)	-2.114314618108234	3.0
+	Mantenimiento y reparación de automóviles	2023	8	Agosto	Variación interanual (%)	-11.01287928399913	3.0
+	Comercio de repuestos y accesorios de motocicletas	2023	8	Agosto	Variación interanual (%)	-4.502219403931512	3.0
+	Comercio de repuestos y accesorios de automóviles	2023	8	Agosto	Variación interanual (%)	1.04880436302615	3.0
+	Venta de motocicletas	2023	9	Septiembre	Variación interanual (%)	-31.57278369832533	3.0
+	Venta de automóviles	2023	9	Septiembre	Variación interanual (%)	36.11342785654713	3.0
+	Mantenimiento y reparación de motocicletas	2023	9	Septiembre	Variación interanual (%)	-28.020950243172464	3.0
+	Mantenimiento y reparación de automóviles	2023	9	Septiembre	Variación interanual (%)	17.394078611536493	3.0
+	Comercio de repuestos y accesorios de motocicletas	2023	9	Septiembre	Variación interanual (%)	36.99980668857531	3.0
+	Comercio de repuestos y accesorios de automóviles	2023	9	Septiembre	Variación interanual (%)	-18.005060593953925	3.0
+p	Venta de motocicletas	2023	10	Octubre	Variación interanual (%)	3.019701712391826	3.0
+p	Venta de automóviles	2023	10	Octubre	Variación interanual (%)	29.236630450119932	3.0
+p	Mantenimiento y reparación de motocicletas	2023	10	Octubre	Variación interanual (%)	64.42988668555243	3.0
+p	Mantenimiento y reparación de automóviles	2023	10	Octubre	Variación interanual (%)	5.917843388960204	3.0
+p	Comercio de repuestos y accesorios de motocicletas	2023	10	Octubre	Variación interanual (%)	-2.211451075431678	3.0
+p	Comercio de repuestos y accesorios de automóviles	2023	10	Octubre	Variación interanual (%)	-47.8335870116692	3.0
+p	Venta de motocicletas	2023	11	Noviembre	Variación interanual (%)	7.269629419281541	3.0
+p	Venta de automóviles	2023	11	Noviembre	Variación interanual (%)	3.088358458961477	3.0
+p	Mantenimiento y reparación de motocicletas	2023	11	Noviembre	Variación interanual (%)	2.594472645234071	3.0
+p	Mantenimiento y reparación de automóviles	2023	11	Noviembre	Variación interanual (%)	-9.956942949407965	3.0
+p	Comercio de repuestos y accesorios de motocicletas	2023	11	Noviembre	Variación interanual (%)	62.49361267245786	3.0
+p	Comercio de repuestos y accesorios de automóviles	2023	11	Noviembre	Variación interanual (%)	13.034033309196236	3.0
+p	Venta de motocicletas	2023	12	Diciembre	Variación interanual (%)	18.00708143651997	3.0
+p	Venta de automóviles	2023	12	Diciembre	Variación interanual (%)	7.4035930884540555	3.0
+p	Mantenimiento y reparación de motocicletas	2023	12	Diciembre	Variación interanual (%)	50.38104705102716	3.0
+p	Mantenimiento y reparación de automóviles	2023	12	Diciembre	Variación interanual (%)	-11.541988733132454	3.0
+p	Comercio de repuestos y accesorios de motocicletas	2023	12	Diciembre	Variación interanual (%)	-7.216895568800216	3.0
+p	Comercio de repuestos y accesorios de automóviles	2023	12	Diciembre	Variación interanual (%)	27.914438502673804	3.0
+p	Venta de motocicletas	2024	1	Enero	Variación interanual (%)	53.22657364832726	3.0
+p	Venta de automóviles	2024	1	Enero	Variación interanual (%)	26.56054373099626	3.0
+p	Mantenimiento y reparación de motocicletas	2024	1	Enero	Variación interanual (%)	-25.35449020931803	3.0
+p	Mantenimiento y reparación de automóviles	2024	1	Enero	Variación interanual (%)	27.705627705627705	3.0
+p	Comercio de repuestos y accesorios de motocicletas	2024	1	Enero	Variación interanual (%)	-23.77140041877078	3.0
+p	Comercio de repuestos y accesorios de automóviles	2024	1	Enero	Variación interanual (%)	-0.3288672350791669	3.0
+	Venta de motocicletas	2022	1	Enero	Variación intermensual (%)		2.0
+	Venta de automóviles	2022	1	Enero	Variación intermensual (%)		2.0
+	Mantenimiento y reparación de motocicletas	2022	1	Enero	Variación intermensual (%)		2.0
+	Mantenimiento y reparación de automóviles	2022	1	Enero	Variación intermensual (%)		2.0
+	Comercio de repuestos y accesorios de motocicletas	2022	1	Enero	Variación intermensual (%)		2.0
+	Comercio de repuestos y accesorios de automóviles	2022	1	Enero	Variación intermensual (%)		2.0
+	Venta de motocicletas	2022	2	Febrero	Variación intermensual (%)	-31.293445878848065	2.0
+	Venta de automóviles	2022	2	Febrero	Variación intermensual (%)	6.739445248969586	2.0
+	Mantenimiento y reparación de motocicletas	2022	2	Febrero	Variación intermensual (%)	48.90733525326106	2.0
+	Mantenimiento y reparación de automóviles	2022	2	Febrero	Variación intermensual (%)	32.36444941307994	2.0
+	Comercio de repuestos y accesorios de motocicletas	2022	2	Febrero	Variación intermensual (%)	24.7746553552492	2.0
+	Comercio de repuestos y accesorios de automóviles	2022	2	Febrero	Variación intermensual (%)	40.03458711629918	2.0
+	Venta de motocicletas	2022	3	Marzo	Variación intermensual (%)	51.85185185185184	2.0
+	Venta de automóviles	2022	3	Marzo	Variación intermensual (%)	-4.727614276768929	2.0
+	Mantenimiento y reparación de motocicletas	2022	3	Marzo	Variación intermensual (%)	6.746302616609776	2.0
+	Mantenimiento y reparación de automóviles	2022	3	Marzo	Variación intermensual (%)	24.42286036036035	2.0
+	Comercio de repuestos y accesorios de motocicletas	2022	3	Marzo	Variación intermensual (%)	-21.576543078720924	2.0
+	Comercio de repuestos y accesorios de automóviles	2022	3	Marzo	Variación intermensual (%)	-17.423072964906872	2.0
+	Venta de motocicletas	2022	4	Abril	Variación intermensual (%)	1.1421772754313004	2.0
+	Venta de automóviles	2022	4	Abril	Variación intermensual (%)	-1.117318435754201	2.0
+	Mantenimiento y reparación de motocicletas	2022	4	Abril	Variación intermensual (%)	0.5435361824576417	2.0
+	Mantenimiento y reparación de automóviles	2022	4	Abril	Variación intermensual (%)	-16.585586604819547	2.0
+	Comercio de repuestos y accesorios de motocicletas	2022	4	Abril	Variación intermensual (%)	6.028176645895425	2.0
+	Comercio de repuestos y accesorios de automóviles	2022	4	Abril	Variación intermensual (%)	0.7477567298105791	2.0
+	Venta de motocicletas	2022	5	Mayo	Variación intermensual (%)	-9.11657452064463	2.0
+	Venta de automóviles	2022	5	Mayo	Variación intermensual (%)	8.518887781101139	2.0
+	Mantenimiento y reparación de motocicletas	2022	5	Mayo	Variación intermensual (%)	-5.8723765104939645	2.0
+	Mantenimiento y reparación de automóviles	2022	5	Mayo	Variación intermensual (%)	-9.3991590939916	2.0
+	Comercio de repuestos y accesorios de motocicletas	2022	5	Mayo	Variación intermensual (%)	17.835696946467365	2.0
+	Comercio de repuestos y accesorios de automóviles	2022	5	Mayo	Variación intermensual (%)	21.251855517070748	2.0
+	Venta de motocicletas	2022	6	Junio	Variación intermensual (%)	-31.944084908102514	2.0
+	Venta de automóviles	2022	6	Junio	Variación intermensual (%)	-13.04614128215597	2.0
+	Mantenimiento y reparación de motocicletas	2022	6	Junio	Variación intermensual (%)	-22.25225225225224	2.0
+	Mantenimiento y reparación de automóviles	2022	6	Junio	Variación intermensual (%)	10.149700598802397	2.0
+	Comercio de repuestos y accesorios de motocicletas	2022	6	Junio	Variación intermensual (%)	-29.469803751490844	2.0
+	Comercio de repuestos y accesorios de automóviles	2022	6	Junio	Variación intermensual (%)	-3.3564578657416773	2.0
+	Venta de motocicletas	2022	7	Julio	Variación intermensual (%)	13.693419551160144	2.0
+	Venta de automóviles	2022	7	Julio	Variación intermensual (%)	10.62455975581122	2.0
+	Mantenimiento y reparación de motocicletas	2022	7	Julio	Variación intermensual (%)	-4.9391657010428895	2.0
+	Mantenimiento y reparación de automóviles	2022	7	Julio	Variación intermensual (%)	33.378635498776845	2.0
+	Comercio de repuestos y accesorios de motocicletas	2022	7	Julio	Variación intermensual (%)	43.489623366641055	2.0
+	Comercio de repuestos y accesorios de automóviles	2022	7	Julio	Variación intermensual (%)	-8.561173862556739	2.0
+	Venta de motocicletas	2022	8	Agosto	Variación intermensual (%)	19.571763131482108	2.0
+	Venta de automóviles	2022	8	Agosto	Variación intermensual (%)	-46.51384909264566	2.0
+	Mantenimiento y reparación de motocicletas	2022	8	Agosto	Variación intermensual (%)	50.61709584031693	2.0
+	Mantenimiento y reparación de automóviles	2022	8	Agosto	Variación intermensual (%)	-6.643570409618908	2.0
+	Comercio de repuestos y accesorios de motocicletas	2022	8	Agosto	Variación intermensual (%)	-15.523891150632107	2.0
+	Comercio de repuestos y accesorios de automóviles	2022	8	Agosto	Variación intermensual (%)	-17.444008312168087	2.0
+	Venta de motocicletas	2022	9	Septiembre	Variación intermensual (%)	19.459988808058192	2.0
+	Venta de automóviles	2022	9	Septiembre	Variación intermensual (%)	42.738095238095234	2.0
+	Mantenimiento y reparación de motocicletas	2022	9	Septiembre	Variación intermensual (%)	-18.877086494688918	2.0
+	Mantenimiento y reparación de automóviles	2022	9	Septiembre	Variación intermensual (%)	-14.472822527832355	2.0
+	Comercio de repuestos y accesorios de motocicletas	2022	9	Septiembre	Variación intermensual (%)	-34.39441978440076	2.0
+	Comercio de repuestos y accesorios de automóviles	2022	9	Septiembre	Variación intermensual (%)	5.006292826178154	2.0
+	Venta de motocicletas	2022	10	Octubre	Variación intermensual (%)	-36.397704649256355	2.0
+	Venta de automóviles	2022	10	Octubre	Variación intermensual (%)	-1.4873505699193679	2.0
+	Mantenimiento y reparación de motocicletas	2022	10	Octubre	Variación intermensual (%)	-29.567277715425867	2.0
+	Mantenimiento y reparación de automóviles	2022	10	Octubre	Variación intermensual (%)	-0.587034201123014	2.0
+	Comercio de repuestos y accesorios de motocicletas	2022	10	Octubre	Variación intermensual (%)	27.62420259037309	2.0
+	Comercio de repuestos y accesorios de automóviles	2022	10	Octubre	Variación intermensual (%)	31.242508989212936	2.0
+	Venta de motocicletas	2022	11	Noviembre	Variación intermensual (%)	29.681458294973307	2.0
+	Venta de automóviles	2022	11	Noviembre	Variación intermensual (%)	34.78199520248341	2.0
+	Mantenimiento y reparación de motocicletas	2022	11	Noviembre	Variación intermensual (%)	25.56657223796035	2.0
+	Mantenimiento y reparación de automóviles	2022	11	Noviembre	Variación intermensual (%)	19.25545571245186	2.0
+	Comercio de repuestos y accesorios de motocicletas	2022	11	Noviembre	Variación intermensual (%)	-11.07240230233262	2.0
+	Comercio de repuestos y accesorios de automóviles	2022	11	Noviembre	Variación intermensual (%)	-29.934043632673767	2.0
+	Venta de motocicletas	2022	12	Diciembre	Variación intermensual (%)	12.281698139997147	2.0
+	Venta de automóviles	2022	12	Diciembre	Variación intermensual (%)	-8.511306532663312	2.0
+	Mantenimiento y reparación de motocicletas	2022	12	Diciembre	Variación intermensual (%)	-14.890016920473775	2.0
+	Mantenimiento y reparación de automóviles	2022	12	Diciembre	Variación intermensual (%)	-17.836383207750277	2.0
+	Comercio de repuestos y accesorios de motocicletas	2022	12	Diciembre	Variación intermensual (%)	31.459717254300813	2.0
+	Comercio de repuestos y accesorios de automóviles	2022	12	Diciembre	Variación intermensual (%)	-18.754525706010135	2.0
+	Venta de motocicletas	2023	1	Enero	Variación intermensual (%)	-20.245321193727868	2.0
+	Venta de automóviles	2023	1	Enero	Variación intermensual (%)	-36.022428195445706	2.0
+	Mantenimiento y reparación de motocicletas	2023	1	Enero	Variación intermensual (%)	47.21669980119284	2.0
+	Mantenimiento y reparación de automóviles	2023	1	Enero	Variación intermensual (%)	-27.368007336564915	2.0
+	Comercio de repuestos y accesorios de motocicletas	2023	1	Enero	Variación intermensual (%)	5.195646540554535	2.0
+	Comercio de repuestos y accesorios de automóviles	2023	1	Enero	Variación intermensual (%)	46.34581105169339	2.0
+	Venta de motocicletas	2023	2	Febrero	Variación intermensual (%)	-12.795306801966069	2.0
+	Venta de automóviles	2023	2	Febrero	Variación intermensual (%)	38.275800393489554	2.0
+	Mantenimiento y reparación de motocicletas	2023	2	Febrero	Variación intermensual (%)	-1.721809588116139	2.0
+	Mantenimiento y reparación de automóviles	2023	2	Febrero	Variación intermensual (%)	13.582251082251084	2.0
+	Comercio de repuestos y accesorios de motocicletas	2023	2	Febrero	Variación intermensual (%)	-4.347826086956523	2.0
+	Comercio de repuestos y accesorios de automóviles	2023	2	Febrero	Variación intermensual (%)	-33.313032886723505	2.0
+	Venta de motocicletas	2023	3	Marzo	Variación intermensual (%)	57.5090909090909	2.0
+	Venta de automóviles	2023	3	Marzo	Variación intermensual (%)	-19.169577027551416	2.0
+	Mantenimiento y reparación de motocicletas	2023	3	Marzo	Variación intermensual (%)	-34.60437421275621	2.0
+	Mantenimiento y reparación de automóviles	2023	3	Marzo	Variación intermensual (%)	8.00381133873274	2.0
+	Comercio de repuestos y accesorios de motocicletas	2023	3	Marzo	Variación intermensual (%)	-23.177955189286635	2.0
+	Comercio de repuestos y accesorios de automóviles	2023	3	Marzo	Variación intermensual (%)	58.88584474885844	2.0
+	Venta de motocicletas	2023	4	Abril	Variación intermensual (%)	-41.983146715918274	2.0
+	Venta de automóviles	2023	4	Abril	Variación intermensual (%)	58.041286605856946	2.0
+	Mantenimiento y reparación de motocicletas	2023	4	Abril	Variación intermensual (%)	49.588513395202256	2.0
+	Mantenimiento y reparación de automóviles	2023	4	Abril	Variación intermensual (%)	37.80326422584913	2.0
+	Comercio de repuestos y accesorios de motocicletas	2023	4	Abril	Variación intermensual (%)	12.152195776064366	2.0
+	Comercio de repuestos y accesorios de automóviles	2023	4	Abril	Variación intermensual (%)	-0.9196459363145157	2.0
+	Venta de motocicletas	2023	5	Mayo	Variación intermensual (%)	90.31038599283725	2.0
+	Venta de automóviles	2023	5	Mayo	Variación intermensual (%)	-2.69339813689754	2.0
+	Mantenimiento y reparación de motocicletas	2023	5	Mayo	Variación intermensual (%)	-26.594872995434866	2.0
+	Mantenimiento y reparación de automóviles	2023	5	Mayo	Variación intermensual (%)	-34.06956892872386	2.0
+	Comercio de repuestos y accesorios de motocicletas	2023	5	Mayo	Variación intermensual (%)	1.0162905395307231	2.0
+	Comercio de repuestos y accesorios de automóviles	2023	5	Mayo	Variación intermensual (%)	14.131569787678394	2.0
+	Venta de motocicletas	2023	6	Junio	Variación intermensual (%)	-4.1923680083638315	2.0
+	Venta de automóviles	2023	6	Junio	Variación intermensual (%)	-28.178980228928204	2.0
+	Mantenimiento y reparación de motocicletas	2023	6	Junio	Variación intermensual (%)	-4.672301068410142	2.0
+	Mantenimiento y reparación de automóviles	2023	6	Junio	Variación intermensual (%)	16.361870852888828	2.0
+	Comercio de repuestos y accesorios de motocicletas	2023	6	Junio	Variación intermensual (%)	7.885781920402424	2.0
+	Comercio de repuestos y accesorios de automóviles	2023	6	Junio	Variación intermensual (%)	-42.6959438853309	2.0
+	Venta de motocicletas	2023	7	Julio	Variación intermensual (%)	6.045395024006991	2.0
+	Venta de automóviles	2023	7	Julio	Variación intermensual (%)	11.518400463633734	2.0
+	Mantenimiento y reparación de motocicletas	2023	7	Julio	Variación intermensual (%)	18.434258949481425	2.0
+	Mantenimiento y reparación de automóviles	2023	7	Julio	Variación intermensual (%)	4.019471488178025	2.0
+	Comercio de repuestos y accesorios de motocicletas	2023	7	Julio	Variación intermensual (%)	34.13329676357652	2.0
+	Comercio de repuestos y accesorios de automóviles	2023	7	Julio	Variación intermensual (%)	18.183430902962584	2.0
+	Venta de motocicletas	2023	8	Agosto	Variación intermensual (%)	-35.52171228647871	2.0
+	Venta de automóviles	2023	8	Agosto	Variación intermensual (%)	17.64323762504872	2.0
+	Mantenimiento y reparación de motocicletas	2023	8	Agosto	Variación intermensual (%)	36.66666666666668	2.0
+	Mantenimiento y reparación de automóviles	2023	8	Agosto	Variación intermensual (%)	9.01189998662922	2.0
+	Comercio de repuestos y accesorios de motocicletas	2023	8	Agosto	Variación intermensual (%)	-23.014006747776307	2.0
+	Comercio de repuestos y accesorios de automóviles	2023	8	Agosto	Variación intermensual (%)	8.465926148303812	2.0
+	Venta de motocicletas	2023	9	Septiembre	Variación intermensual (%)	-6.750718161506539	2.0
+	Venta de automóviles	2023	9	Septiembre	Variación intermensual (%)	8.13914964108228	2.0
+	Mantenimiento y reparación de motocicletas	2023	9	Septiembre	Variación intermensual (%)	-40.347250930136425	2.0
+	Mantenimiento y reparación de automóviles	2023	9	Septiembre	Variación intermensual (%)	12.829633263829257	2.0
+	Comercio de repuestos y accesorios de motocicletas	2023	9	Septiembre	Variación intermensual (%)	-5.883134130146073	2.0
+	Comercio de repuestos y accesorios de automóviles	2023	9	Septiembre	Variación intermensual (%)	-14.793800166066987	2.0
+p	Venta de motocicletas	2023	10	Octubre	Variación intermensual (%)	-4.244395002567169	2.0
+p	Venta de automóviles	2023	10	Octubre	Variación intermensual (%)	-6.464460784313723	2.0
+p	Mantenimiento y reparación de motocicletas	2023	10	Octubre	Variación intermensual (%)	60.897435897435905	2.0
+p	Mantenimiento y reparación de automóviles	2023	10	Octubre	Variación intermensual (%)	-10.305467985650605	2.0
+p	Comercio de repuestos y accesorios de motocicletas	2023	10	Octubre	Variación intermensual (%)	-8.903626358120505	2.0
+p	Comercio de repuestos y accesorios de automóviles	2023	10	Octubre	Variación intermensual (%)	-16.501542959233397	2.0
+p	Venta de motocicletas	2023	11	Noviembre	Variación intermensual (%)	35.03127792672027	2.0
+p	Venta de automóviles	2023	11	Noviembre	Variación intermensual (%)	7.511737089201873	2.0
+p	Mantenimiento y reparación de motocicletas	2023	11	Noviembre	Variación intermensual (%)	-21.653924841175836	2.0
+p	Mantenimiento y reparación de automóviles	2023	11	Noviembre	Variación intermensual (%)	1.3816507090049697	2.0
+p	Comercio de repuestos y accesorios de motocicletas	2023	11	Noviembre	Variación intermensual (%)	47.76951672862454	2.0
+p	Comercio de repuestos y accesorios de automóviles	2023	11	Noviembre	Variación intermensual (%)	51.818712312779624	2.0
+p	Venta de motocicletas	2023	12	Diciembre	Variación intermensual (%)	23.520847121111842	2.0
+p	Venta de automóviles	2023	12	Diciembre	Variación intermensual (%)	-4.681628922514471	2.0
+p	Mantenimiento y reparación de motocicletas	2023	12	Diciembre	Variación intermensual (%)	24.75261132490378	2.0
+p	Mantenimiento y reparación de automóviles	2023	12	Diciembre	Variación intermensual (%)	-19.282725642558287	2.0
+p	Comercio de repuestos y accesorios de motocicletas	2023	12	Diciembre	Variación intermensual (%)	-24.937106918239	2.0
+p	Comercio de repuestos y accesorios de automóviles	2023	12	Diciembre	Variación intermensual (%)	-8.058936579115942	2.0
+p	Venta de motocicletas	2024	1	Enero	Variación intermensual (%)	3.5576510930132956	2.0
+p	Venta de automóviles	2024	1	Enero	Variación intermensual (%)	-24.61112294907308	2.0
+p	Mantenimiento y reparación de motocicletas	2024	1	Enero	Variación intermensual (%)	-26.925195549190263	2.0
+p	Mantenimiento y reparación de automóviles	2024	1	Enero	Variación intermensual (%)	4.8578199052132724	2.0
+p	Comercio de repuestos y accesorios de motocicletas	2024	1	Enero	Variación intermensual (%)	-13.573523250942603	2.0
+p	Comercio de repuestos y accesorios de automóviles	2024	1	Enero	Variación intermensual (%)	14.032887402452609	2.0
+	Venta de motocicletas	2022	1	Enero	Variación de la media en lo que va de año (%)		4.0
+	Venta de automóviles	2022	1	Enero	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de motocicletas	2022	1	Enero	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de automóviles	2022	1	Enero	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de motocicletas	2022	1	Enero	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de automóviles	2022	1	Enero	Variación de la media en lo que va de año (%)		4.0
+	Venta de motocicletas	2022	2	Febrero	Variación de la media en lo que va de año (%)		4.0
+	Venta de automóviles	2022	2	Febrero	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de motocicletas	2022	2	Febrero	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de automóviles	2022	2	Febrero	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de motocicletas	2022	2	Febrero	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de automóviles	2022	2	Febrero	Variación de la media en lo que va de año (%)		4.0
+	Venta de motocicletas	2022	3	Marzo	Variación de la media en lo que va de año (%)		4.0
+	Venta de automóviles	2022	3	Marzo	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de motocicletas	2022	3	Marzo	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de automóviles	2022	3	Marzo	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de motocicletas	2022	3	Marzo	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de automóviles	2022	3	Marzo	Variación de la media en lo que va de año (%)		4.0
+	Venta de motocicletas	2022	4	Abril	Variación de la media en lo que va de año (%)		4.0
+	Venta de automóviles	2022	4	Abril	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de motocicletas	2022	4	Abril	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de automóviles	2022	4	Abril	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de motocicletas	2022	4	Abril	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de automóviles	2022	4	Abril	Variación de la media en lo que va de año (%)		4.0
+	Venta de motocicletas	2022	5	Mayo	Variación de la media en lo que va de año (%)		4.0
+	Venta de automóviles	2022	5	Mayo	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de motocicletas	2022	5	Mayo	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de automóviles	2022	5	Mayo	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de motocicletas	2022	5	Mayo	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de automóviles	2022	5	Mayo	Variación de la media en lo que va de año (%)		4.0
+	Venta de motocicletas	2022	6	Junio	Variación de la media en lo que va de año (%)		4.0
+	Venta de automóviles	2022	6	Junio	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de motocicletas	2022	6	Junio	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de automóviles	2022	6	Junio	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de motocicletas	2022	6	Junio	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de automóviles	2022	6	Junio	Variación de la media en lo que va de año (%)		4.0
+	Venta de motocicletas	2022	7	Julio	Variación de la media en lo que va de año (%)		4.0
+	Venta de automóviles	2022	7	Julio	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de motocicletas	2022	7	Julio	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de automóviles	2022	7	Julio	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de motocicletas	2022	7	Julio	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de automóviles	2022	7	Julio	Variación de la media en lo que va de año (%)		4.0
+	Venta de motocicletas	2022	8	Agosto	Variación de la media en lo que va de año (%)		4.0
+	Venta de automóviles	2022	8	Agosto	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de motocicletas	2022	8	Agosto	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de automóviles	2022	8	Agosto	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de motocicletas	2022	8	Agosto	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de automóviles	2022	8	Agosto	Variación de la media en lo que va de año (%)		4.0
+	Venta de motocicletas	2022	9	Septiembre	Variación de la media en lo que va de año (%)		4.0
+	Venta de automóviles	2022	9	Septiembre	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de motocicletas	2022	9	Septiembre	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de automóviles	2022	9	Septiembre	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de motocicletas	2022	9	Septiembre	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de automóviles	2022	9	Septiembre	Variación de la media en lo que va de año (%)		4.0
+	Venta de motocicletas	2022	10	Octubre	Variación de la media en lo que va de año (%)		4.0
+	Venta de automóviles	2022	10	Octubre	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de motocicletas	2022	10	Octubre	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de automóviles	2022	10	Octubre	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de motocicletas	2022	10	Octubre	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de automóviles	2022	10	Octubre	Variación de la media en lo que va de año (%)		4.0
+	Venta de motocicletas	2022	11	Noviembre	Variación de la media en lo que va de año (%)		4.0
+	Venta de automóviles	2022	11	Noviembre	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de motocicletas	2022	11	Noviembre	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de automóviles	2022	11	Noviembre	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de motocicletas	2022	11	Noviembre	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de automóviles	2022	11	Noviembre	Variación de la media en lo que va de año (%)		4.0
+	Venta de motocicletas	2022	12	Diciembre	Variación de la media en lo que va de año (%)		4.0
+	Venta de automóviles	2022	12	Diciembre	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de motocicletas	2022	12	Diciembre	Variación de la media en lo que va de año (%)		4.0
+	Mantenimiento y reparación de automóviles	2022	12	Diciembre	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de motocicletas	2022	12	Diciembre	Variación de la media en lo que va de año (%)		4.0
+	Comercio de repuestos y accesorios de automóviles	2022	12	Diciembre	Variación de la media en lo que va de año (%)		4.0
+	Venta de motocicletas	2023	1	Enero	Variación de la media en lo que va de año (%)	-21.71052631578948	4.0
+	Venta de automóviles	2023	1	Enero	Variación de la media en lo que va de año (%)	-37.71861423638187	4.0
+	Mantenimiento y reparación de motocicletas	2023	1	Enero	Variación de la media en lo que va de año (%)	50.53362696933763	4.0
+	Mantenimiento y reparación de automóviles	2023	1	Enero	Variación de la media en lo que va de año (%)	3.297931805477905	4.0
+	Comercio de repuestos y accesorios de motocicletas	2023	1	Enero	Variación de la media en lo que va de año (%)	7.621951219512191	4.0
+	Comercio de repuestos y accesorios de automóviles	2023	1	Enero	Variación de la media en lo que va de año (%)	18.31676034010663	4.0
+	Venta de motocicletas	2023	2	Febrero	Variación de la media en lo que va de año (%)	-13.126333603119711	4.0
+	Venta de automóviles	2023	2	Febrero	Variación de la media en lo que va de año (%)	-28.218115200172413	4.0
+	Mantenimiento y reparación de motocicletas	2023	2	Febrero	Variación de la media en lo que va de año (%)	19.914244878513564	4.0
+	Mantenimiento y reparación de automóviles	2023	2	Febrero	Variación de la media en lo que va de año (%)	-5.0517199903776895	4.0
+	Comercio de repuestos y accesorios de motocicletas	2023	2	Febrero	Variación de la media en lo que va de año (%)	-6.321872972813591	4.0
+	Comercio de repuestos y accesorios de automóviles	2023	2	Febrero	Variación de la media en lo que va de año (%)	-17.83741594620558	4.0
+	Venta de motocicletas	2023	3	Marzo	Variación de la media en lo que va de año (%)	-6.9376250227314085	4.0
+	Venta de automóviles	2023	3	Marzo	Variación de la media en lo que va de año (%)	-29.315949147645192	4.0
+	Mantenimiento y reparación de motocicletas	2023	3	Marzo	Variación de la media en lo que va de año (%)	-3.0985213490613006	4.0
+	Mantenimiento y reparación de automóviles	2023	3	Marzo	Variación de la media en lo que va de año (%)	-12.519943688409207	4.0
+	Comercio de repuestos y accesorios de motocicletas	2023	3	Marzo	Variación de la media en lo que va de año (%)	-10.222277003985381	4.0
+	Comercio de repuestos y accesorios de automóviles	2023	3	Marzo	Variación de la media en lo que va de año (%)	-9.303079416531613	4.0
+	Venta de motocicletas	2023	4	Abril	Variación de la media en lo que va de año (%)	-16.398334262386484	4.0
+	Venta de automóviles	2023	4	Abril	Variación de la media en lo que va de año (%)	-19.795723818602738	4.0
+	Mantenimiento y reparación de motocicletas	2023	4	Abril	Variación de la media en lo que va de año (%)	-4.885108922709636	4.0
+	Mantenimiento y reparación de automóviles	2023	4	Abril	Variación de la media en lo que va de año (%)	-2.332392009204076	4.0
+	Comercio de repuestos y accesorios de motocicletas	2023	4	Abril	Variación de la media en lo que va de año (%)	-11.266554747248648	4.0
+	Comercio de repuestos y accesorios de automóviles	2023	4	Abril	Variación de la media en lo que va de año (%)	-5.374801611524848	4.0
+	Venta de motocicletas	2023	5	Mayo	Variación de la media en lo que va de año (%)	-8.272506082725062	4.0
+	Venta de automóviles	2023	5	Mayo	Variación de la media en lo que va de año (%)	-16.026316355270797	4.0
+	Mantenimiento y reparación de motocicletas	2023	5	Mayo	Variación de la media en lo que va de año (%)	-10.01651332861524	4.0
+	Mantenimiento y reparación de automóviles	2023	5	Mayo	Variación de la media en lo que va de año (%)	-3.308542827248828	4.0
+	Comercio de repuestos y accesorios de motocicletas	2023	5	Mayo	Variación de la media en lo que va de año (%)	-14.709222257121446	4.0
+	Comercio de repuestos y accesorios de automóviles	2023	5	Mayo	Variación de la media en lo que va de año (%)	-4.05487948127613	4.0
+	Venta de motocicletas	2023	6	Junio	Variación de la media en lo que va de año (%)	1.711092201191322	4.0
+	Venta de automóviles	2023	6	Junio	Variación de la media en lo que va de año (%)	-16.482218466626687	4.0
+	Mantenimiento y reparación de motocicletas	2023	6	Junio	Variación de la media en lo que va de año (%)	-10.492149145940665	4.0
+	Mantenimiento y reparación de automóviles	2023	6	Junio	Variación de la media en lo que va de año (%)	-3.1319491584934633	4.0
+	Comercio de repuestos y accesorios de motocicletas	2023	6	Junio	Variación de la media en lo que va de año (%)	-11.068192257902876	4.0
+	Comercio de repuestos y accesorios de automóviles	2023	6	Junio	Variación de la media en lo que va de año (%)	-10.688137742846726	4.0
+	Venta de motocicletas	2023	7	Julio	Variación de la media en lo que va de año (%)	9.06609514951775	4.0
+	Venta de automóviles	2023	7	Julio	Variación de la media en lo que va de año (%)	-16.75044994724756	4.0
+	Mantenimiento y reparación de motocicletas	2023	7	Julio	Variación de la media en lo que va de año (%)	-8.333780904810517	4.0
+	Mantenimiento y reparación de automóviles	2023	7	Julio	Variación de la media en lo que va de año (%)	-6.991529456552758	4.0
+	Comercio de repuestos y accesorios de motocicletas	2023	7	Julio	Variación de la media en lo que va de año (%)	-8.481862025581876	4.0
+	Comercio de repuestos y accesorios de automóviles	2023	7	Julio	Variación de la media en lo que va de año (%)	-12.457784879985512	4.0
+	Venta de motocicletas	2023	8	Agosto	Variación de la media en lo que va de año (%)	6.3631706326072734	4.0
+	Venta de automóviles	2023	8	Agosto	Variación de la media en lo que va de año (%)	-9.75795775053243	4.0
+	Mantenimiento y reparación de motocicletas	2023	8	Agosto	Variación de la media en lo que va de año (%)	-7.398618843357363	4.0
+	Mantenimiento y reparación de automóviles	2023	8	Agosto	Variación de la media en lo que va de año (%)	-7.588699612622984	4.0
+	Comercio de repuestos y accesorios de motocicletas	2023	8	Agosto	Variación de la media en lo que va de año (%)	-7.999938568335052	4.0
+	Comercio de repuestos y accesorios de automóviles	2023	8	Agosto	Variación de la media en lo que va de año (%)	-11.03430996875553	4.0
+	Venta de motocicletas	2023	9	Septiembre	Variación de la media en lo que va de año (%)	1.3907223774291433	4.0
+	Venta de automóviles	2023	9	Septiembre	Variación de la media en lo que va de año (%)	-5.454711420598279	4.0
+	Mantenimiento y reparación de motocicletas	2023	9	Septiembre	Variación de la media en lo que va de año (%)	-9.64059597890483	4.0
+	Mantenimiento y reparación de automóviles	2023	9	Septiembre	Variación de la media en lo que va de año (%)	-4.773273122114685	4.0
+	Comercio de repuestos y accesorios de motocicletas	2023	9	Septiembre	Variación de la media en lo que va de año (%)	-4.687989073215171	4.0
+	Comercio de repuestos y accesorios de automóviles	2023	9	Septiembre	Variación de la media en lo que va de año (%)	-11.72887833229389	4.0
+p	Venta de motocicletas	2023	10	Octubre	Variación de la media en lo que va de año (%)	1.516074641880505	4.0
+p	Venta de automóviles	2023	10	Octubre	Variación de la media en lo que va de año (%)	-2.519904981318555	4.0
+p	Mantenimiento y reparación de motocicletas	2023	10	Octubre	Variación de la media en lo que va de año (%)	-4.372300368975823	4.0
+p	Mantenimiento y reparación de automóviles	2023	10	Octubre	Variación de la media en lo que va de año (%)	-3.6961835417663624	4.0
+p	Comercio de repuestos y accesorios de motocicletas	2023	10	Octubre	Variación de la media en lo que va de año (%)	-4.47534075538446	4.0
+p	Comercio de repuestos y accesorios de automóviles	2023	10	Octubre	Variación de la media en lo que va de año (%)	-15.90429027412692	4.0
+p	Venta de motocicletas	2023	11	Noviembre	Variación de la media en lo que va de año (%)	2.038134501417166	4.0
+p	Venta de automóviles	2023	11	Noviembre	Variación de la media en lo que va de año (%)	-1.9458880257165911	4.0
+p	Mantenimiento y reparación de motocicletas	2023	11	Noviembre	Variación de la media en lo que va de año (%)	-3.8011121258713865	4.0
+p	Mantenimiento y reparación de automóviles	2023	11	Noviembre	Variación de la media en lo que va de año (%)	-4.367704617089796	4.0
+p	Comercio de repuestos y accesorios de motocicletas	2023	11	Noviembre	Variación de la media en lo que va de año (%)	0.27549873729744156	4.0
+p	Comercio de repuestos y accesorios de automóviles	2023	11	Noviembre	Variación de la media en lo que va de año (%)	-13.735196100780511	4.0
+p	Venta de motocicletas	2023	12	Diciembre	Variación de la media en lo que va de año (%)	3.514638480965293	4.0
+p	Venta de automóviles	2023	12	Diciembre	Variación de la media en lo que va de año (%)	-1.1453597742592803	4.0
+p	Mantenimiento y reparación de motocicletas	2023	12	Diciembre	Variación de la media en lo que va de año (%)	-0.26692025892345317	4.0
+p	Mantenimiento y reparación de automóviles	2023	12	Diciembre	Variación de la media en lo que va de año (%)	-4.948751140631968	4.0
+p	Comercio de repuestos y accesorios de motocicletas	2023	12	Diciembre	Variación de la media en lo que va de año (%)	-0.36362832543076484	4.0
+p	Comercio de repuestos y accesorios de automóviles	2023	12	Diciembre	Variación de la media en lo que va de año (%)	-11.344404538989682	4.0
+p	Venta de motocicletas	2024	1	Enero	Variación de la media en lo que va de año (%)	53.22657364832726	4.0
+p	Venta de automóviles	2024	1	Enero	Variación de la media en lo que va de año (%)	26.560543730996255	4.0
+p	Mantenimiento y reparación de motocicletas	2024	1	Enero	Variación de la media en lo que va de año (%)	-25.354490209318026	4.0
+p	Mantenimiento y reparación de automóviles	2024	1	Enero	Variación de la media en lo que va de año (%)	27.7056277056277	4.0
+p	Comercio de repuestos y accesorios de motocicletas	2024	1	Enero	Variación de la media en lo que va de año (%)	-23.77140041877078	4.0
+p	Comercio de repuestos y accesorios de automóviles	2024	1	Enero	Variación de la media en lo que va de año (%)	-0.3288672350791666	4.0
