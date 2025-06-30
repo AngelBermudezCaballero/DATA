@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Informe Feedback R</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/libs/clipboard/clipboard.min.js"></script>
+<script src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/libs/quarto-html/quarto.js"></script>
+<script src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/libs/quarto-html/popper.min.js"></script>
+<script src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/libs/quarto-html/anchor.min.js"></script>
+<link href="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Informe Feedback R</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="fase-1-carga-y-unión-de-datos" class="level1">
+<h1>FASE 1: Carga y unión de datos</h1>
+<p>##Cargar librerías necesarias</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instalar paquetes</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("readxl")</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("dplyr")</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("janitor")</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("gtsummary")</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("ggplot2")</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Carga</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'janitor'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    chisq.test, fisher.test</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gtsummary)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>##Cargar los datos</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># hoja 1</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>datos_demograficos <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_excel</span>(<span class="st">"datos entregable.xlsx"</span>, <span class="at">sheet =</span> <span class="dv">1</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co"># hoja 2</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>datos_laboratorio <span class="ot">&lt;-</span> readxl<span class="sc">::</span><span class="fu">read_excel</span>(<span class="st">"datos entregable.xlsx"</span>, <span class="at">sheet =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>##Limpiar nombres de columnas y unir datos</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Limpiar nombres </span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>datos_demograficos <span class="ot">&lt;-</span> janitor<span class="sc">::</span><span class="fu">clean_names</span>(datos_demograficos)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>datos_laboratorio <span class="ot">&lt;-</span> janitor<span class="sc">::</span><span class="fu">clean_names</span>(datos_laboratorio)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Unimos por la columna 'codigo'</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>datos_combinados <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">inner_join</span>(datos_demograficos, datos_laboratorio, <span class="at">by =</span> <span class="st">"codigo"</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos_combinados)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 33
+  codigo peso_de_la_madre area_de_salud responde hospital    fecha_de_nacimiento
+   &lt;dbl&gt;            &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt; &lt;chr&gt;       &lt;dttm&gt;             
+1    302             66.4 Jarrio               1 JARRIO      1992-07-04 18:00:00
+2    255             60.5 Oriente              1 ORIENTE     2003-07-16 12:00:00
+3     50             98.5 Avilés               1 SAN AGUSTIN 1996-07-19 18:00:00
+4    474             93.4 Cangas               1 CANGAS NAR… 1989-06-10 00:00:00
+5    391             78.7 Cangas               1 CANGAS NAR… 2000-06-08 18:00:00
+6    803             90.5 Cangas               1 CANGAS NAR… 1984-06-10 18:00:00
+# ℹ 27 more variables: edad_de_la_madre &lt;dbl&gt;, peso_al_nacimiento &lt;dbl&gt;,
+#   tiempo_de_embarazo_al_parto &lt;dbl&gt;, lactancia_materna &lt;chr&gt;,
+#   otro_tipo_de_lactancia &lt;chr&gt;, lactancia_en_embarazo_anterior &lt;dbl&gt;,
+#   gine_publico &lt;dbl&gt;, gine_privado &lt;dbl&gt;, clases_de_parto &lt;dbl&gt;,
+#   numero_de_clases_de_parto &lt;dbl&gt;, cesarea &lt;dbl&gt;, biberon &lt;dbl&gt;,
+#   numero_de_hijos &lt;dbl&gt;, nacional &lt;dbl&gt;, profesion &lt;dbl&gt;,
+#   nivel_de_estudios &lt;dbl&gt;, pareja &lt;dbl&gt;, situacion_laboral_pareja &lt;dbl&gt;, …</code></pre>
+</div>
+</div>
+</section>
+<section id="fase-2-limpieza-de-datos" class="level1">
+<h1>FASE 2: Limpieza de datos</h1>
+<p>##Eliminar filas sin datos de laboratorio</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtramos las que tengan al menos un dato no nulo en columnas 26 a 33 que es donde están los datos de laboratorio</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>datos_combinados <span class="ot">&lt;-</span> datos_combinados <span class="sc">%&gt;%</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">filter</span>(<span class="fu">rowSums</span>(<span class="sc">!</span><span class="fu">is.na</span>(<span class="fu">across</span>(<span class="dv">26</span><span class="sc">:</span><span class="dv">33</span>))) <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co"># cuántas filas quedan</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(datos_combinados)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 800</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#he hecho esto para que se vea que sea realizar el código, sin embargo, el resultado ha sido 800 filas lo que indica que obviamente se han quedado las mismas que había en el conjunto de datos combinado porque anteriormente hemos hecho un join en el cual ya se han descartado aquellas filas que si estan en la hoja de demograficos pero no en la de laboratorio al no coincidir sus códigos.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>##Valores extremos</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#  resumen </span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(datos_combinados)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     codigo      peso_de_la_madre area_de_salud         responde
+ Min.   :  1.0   Min.   : 46.40   Length:800         Min.   :1  
+ 1st Qu.:203.8   1st Qu.: 73.08   Class :character   1st Qu.:1  
+ Median :407.5   Median : 82.55   Mode  :character   Median :1  
+ Mean   :410.1   Mean   : 83.70                      Mean   :1  
+ 3rd Qu.:615.2   3rd Qu.: 92.72                      3rd Qu.:1  
+ Max.   :829.0   Max.   :151.30                      Max.   :1  
+                                                                
+   hospital         fecha_de_nacimiento           edad_de_la_madre
+ Length:800         Min.   :1980-01-15 12:00:00   Min.   :15.00   
+ Class :character   1st Qu.:1992-08-20 12:00:00   1st Qu.:27.00   
+ Mode  :character   Median :1995-11-10 18:00:00   Median :31.00   
+                    Mean   :1996-02-24 09:37:21   Mean   :30.37   
+                    3rd Qu.:1999-05-16 00:00:00   3rd Qu.:34.00   
+                    Max.   :2010-12-30 06:00:00   Max.   :46.00   
+                                                                  
+ peso_al_nacimiento tiempo_de_embarazo_al_parto lactancia_materna 
+ Min.   :1170       Min.   :266.0               Length:800        
+ 1st Qu.:3040       1st Qu.:276.0               Class :character  
+ Median :3350       Median :279.0               Mode  :character  
+ Mean   :3333       Mean   :279.4                                 
+ 3rd Qu.:3672       3rd Qu.:282.0                                 
+ Max.   :4900       Max.   :294.0                                 
+                                                                  
+ otro_tipo_de_lactancia lactancia_en_embarazo_anterior  gine_publico 
+ Length:800             Min.   :0.0000                 Min.   :0.00  
+ Class :character       1st Qu.:0.0000                 1st Qu.:1.00  
+ Mode  :character       Median :1.0000                 Median :1.00  
+                        Mean   :0.6412                 Mean   :0.93  
+                        3rd Qu.:1.0000                 3rd Qu.:1.00  
+                        Max.   :1.0000                 Max.   :1.00  
+                        NA's   :368                                  
+  gine_privado    clases_de_parto  numero_de_clases_de_parto    cesarea      
+ Min.   :0.0000   Min.   :0.0000   Min.   : 1.000            Min.   :0.0000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.: 4.000            1st Qu.:0.0000  
+ Median :0.0000   Median :1.0000   Median : 8.000            Median :0.0000  
+ Mean   :0.1062   Mean   :0.6575   Mean   : 8.755            Mean   :0.2087  
+ 3rd Qu.:0.0000   3rd Qu.:1.0000   3rd Qu.:12.000            3rd Qu.:0.0000  
+ Max.   :1.0000   Max.   :1.0000   Max.   :36.000            Max.   :1.0000  
+                                   NA's   :273                               
+    biberon     numero_de_hijos    nacional       profesion    
+ Min.   :0.00   Min.   :1.000   Min.   :1.000   Min.   :1.000  
+ 1st Qu.:0.00   1st Qu.:1.000   1st Qu.:1.000   1st Qu.:2.000  
+ Median :1.00   Median :1.000   Median :1.000   Median :2.000  
+ Mean   :0.79   Mean   :1.452   Mean   :1.056   Mean   :2.224  
+ 3rd Qu.:1.00   3rd Qu.:2.000   3rd Qu.:1.000   3rd Qu.:2.000  
+ Max.   :5.00   Max.   :8.000   Max.   :3.000   Max.   :4.000  
+                                                               
+ nivel_de_estudios     pareja       situacion_laboral_pareja
+ Min.   :1.000     Min.   :0.0000   Min.   :1.000           
+ 1st Qu.:4.000     1st Qu.:1.0000   1st Qu.:1.000           
+ Median :4.000     Median :1.0000   Median :1.000           
+ Mean   :4.076     Mean   :0.9888   Mean   :1.142           
+ 3rd Qu.:5.000     3rd Qu.:1.0000   3rd Qu.:1.000           
+ Max.   :6.000     Max.   :1.0000   Max.   :5.000           
+                                    NA's   :9               
+ ocupacion_habitual_pareja tension_arterial_media    glucosa      
+ Length:800                Min.   : 83.0          Min.   : 60.35  
+ Class :character          1st Qu.:102.8          1st Qu.: 86.33  
+ Mode  :character          Median :108.0          Median : 95.36  
+                           Mean   :109.5          Mean   : 95.56  
+                           3rd Qu.:115.2          3rd Qu.:104.44  
+                           Max.   :150.0          Max.   :141.99  
+                                                                  
+      hdl             ldl            trigliceridos      creatinina    
+ Min.   :25.66   Min.   :    54.84   Min.   :  0.00   Min.   :0.4050  
+ 1st Qu.:47.12   1st Qu.:   103.55   1st Qu.: 78.38   1st Qu.:0.7710  
+ Median :56.05   Median :   120.63   Median :110.55   Median :0.9170  
+ Mean   :55.93   Mean   :   336.75   Mean   :126.47   Mean   :0.9092  
+ 3rd Qu.:64.28   3rd Qu.:   137.95   3rd Qu.:154.98   3rd Qu.:1.0480  
+ Max.   :93.83   Max.   :172045.00   Max.   :564.44   Max.   :1.6050  
+ NA's   :3       NA's   :1                                            
+  hemoglobina    colesterol_total   
+ Min.   :10.09   Min.   :    11.11  
+ 1st Qu.:12.69   1st Qu.:   181.47  
+ Median :13.59   Median :   202.22  
+ Mean   :13.62   Mean   :   417.35  
+ 3rd Qu.:14.36   3rd Qu.:   221.91  
+ Max.   :70.25   Max.   :172116.84  
+                                    </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#  tipo de datos </span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(datos_combinados)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [800 × 33] (S3: tbl_df/tbl/data.frame)
+ $ codigo                        : num [1:800] 302 255 50 474 391 803 142 199 793 22 ...
+ $ peso_de_la_madre              : num [1:800] 66.4 60.5 98.5 93.4 78.7 90.5 98.3 90.1 93.3 81.5 ...
+ $ area_de_salud                 : chr [1:800] "Jarrio" "Oriente" "Avilés" "Cangas" ...
+ $ responde                      : num [1:800] 1 1 1 1 1 1 1 1 1 1 ...
+ $ hospital                      : chr [1:800] "JARRIO" "ORIENTE" "SAN AGUSTIN" "CANGAS NARCEA" ...
+ $ fecha_de_nacimiento           : POSIXct[1:800], format: "1992-07-04 18:00:00" "2003-07-16 12:00:00" ...
+ $ edad_de_la_madre              : num [1:800] 33 22 29 36 25 41 38 29 26 33 ...
+ $ peso_al_nacimiento            : num [1:800] 3120 3170 3600 3160 2900 2550 2900 3210 2350 3120 ...
+ $ tiempo_de_embarazo_al_parto   : num [1:800] 282 281 277 269 275 277 269 278 276 278 ...
+ $ lactancia_materna             : chr [1:800] "No" "Si" "Si" "Si" ...
+ $ otro_tipo_de_lactancia        : chr [1:800] "Si" "Si" "Si" "Si" ...
+ $ lactancia_en_embarazo_anterior: num [1:800] 0 NA NA NA 1 1 0 1 0 NA ...
+ $ gine_publico                  : num [1:800] 1 1 1 1 1 1 1 1 1 1 ...
+ $ gine_privado                  : num [1:800] 0 0 1 1 1 1 0 0 0 0 ...
+ $ clases_de_parto               : num [1:800] 1 0 0 0 0 0 0 0 0 0 ...
+ $ numero_de_clases_de_parto     : num [1:800] 4 NA NA NA NA NA NA NA NA NA ...
+ $ cesarea                       : num [1:800] 0 1 0 0 0 0 0 0 1 0 ...
+ $ biberon                       : num [1:800] 1 1 0 0 0 0 1 1 1 0 ...
+ $ numero_de_hijos               : num [1:800] 1 2 2 2 1 2 3 2 2 2 ...
+ $ nacional                      : num [1:800] 1 2 2 1 1 1 1 1 1 1 ...
+ $ profesion                     : num [1:800] 1 1 1 1 1 1 1 1 1 1 ...
+ $ nivel_de_estudios             : num [1:800] 4 4 4 4 4 4 4 4 4 4 ...
+ $ pareja                        : num [1:800] 1 1 1 1 1 1 1 1 1 1 ...
+ $ situacion_laboral_pareja      : num [1:800] 1 1 1 1 1 1 1 1 1 1 ...
+ $ ocupacion_habitual_pareja     : chr [1:800] "CONSTRUCCION POR CUENTA AJENA" "TALADOR DE ARBOLES" "AUTONOMO(TIENDA DE COCHES)" "ALBAÑIL" ...
+ $ tension_arterial_media        : num [1:800] 107 96 100 117 123 100 109 117 116 114 ...
+ $ glucosa                       : num [1:800] 65.2 79.3 98.2 88.1 90.4 ...
+ $ hdl                           : num [1:800] 66.4 78.5 51 50.2 43 ...
+ $ ldl                           : num [1:800] 103 110 131 120 127 ...
+ $ trigliceridos                 : num [1:800] 141.3 107.2 94.7 126.2 51.7 ...
+ $ creatinina                    : num [1:800] 1.221 0.709 1.314 0.554 0.988 ...
+ $ hemoglobina                   : num [1:800] 14.6 13.9 13.3 14.1 12.1 ...
+ $ colesterol_total              : num [1:800] 198 209 201 195 180 ...</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#me doy cuenta de algunos valores inususales, por ejemplo:</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co">#ldl: máximo de 17204 (debería estar entre 50–200).</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co">#colesterol_total: máximo 172116.84,(400 ya es muy alto)</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co">#hemoglobina: máximo 70.25 (lo normal sería 11–16).</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="co">#biberon: máximo 5, debería ser binaria </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>##Reemplazar valores anómalos por NA</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># limpiamos segun lo observado en el paso anterior</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>datos_combinados <span class="ot">&lt;-</span> datos_combinados <span class="sc">%&gt;%</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mutate</span>(</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">ldl =</span> <span class="fu">ifelse</span>(ldl <span class="sc">&gt;</span> <span class="dv">300</span>, <span class="cn">NA</span>, ldl),</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">colesterol_total =</span> <span class="fu">ifelse</span>(colesterol_total <span class="sc">&gt;</span> <span class="dv">300</span>, <span class="cn">NA</span>, colesterol_total),</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">hemoglobina =</span> <span class="fu">ifelse</span>(hemoglobina <span class="sc">&gt;</span> <span class="dv">20</span>, <span class="cn">NA</span>, hemoglobina),</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">biberon =</span> <span class="fu">ifelse</span>(biberon <span class="sc">&gt;</span> <span class="dv">1</span>, <span class="cn">NA</span>, biberon)</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificamos </span></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(datos_combinados[, <span class="fu">c</span>(<span class="st">"ldl"</span>, <span class="st">"colesterol_total"</span>, <span class="st">"hemoglobina"</span>, <span class="st">"biberon"</span>)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>      ldl         colesterol_total  hemoglobina       biberon      
+ Min.   : 54.84   Min.   : 11.11   Min.   :10.09   Min.   :0.0000  
+ 1st Qu.:103.54   1st Qu.:181.14   1st Qu.:12.69   1st Qu.:0.0000  
+ Median :120.58   Median :201.79   Median :13.59   Median :1.0000  
+ Mean   :121.58   Mean   :201.46   Mean   :13.55   Mean   :0.5626  
+ 3rd Qu.:137.90   3rd Qu.:221.51   3rd Qu.:14.35   3rd Qu.:1.0000  
+ Max.   :240.89   Max.   :295.34   Max.   :17.44   Max.   :1.0000  
+ NA's   :2        NA's   :8        NA's   :1       NA's   :41      </code></pre>
+</div>
+</div>
+<p>##Trabajo con variables categóricas</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>datos_combinados <span class="ot">&lt;-</span> datos_combinados <span class="sc">%&gt;%</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mutate</span>(</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">nacional =</span> <span class="fu">factor</span>(nacional,<span class="at">levels =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>),<span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Española"</span>, <span class="st">"Extranjera"</span>, <span class="st">"Otras/No consta"</span>)),</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">profesion =</span> <span class="fu">factor</span>(profesion,<span class="at">levels =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>),<span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Enfermera"</span>, <span class="st">"Oficina"</span>, <span class="st">"Médico"</span>, <span class="st">"Profesora"</span>, <span class="st">"Otros"</span>)),</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">nivel_de_estudios =</span> <span class="fu">factor</span>(nivel_de_estudios,<span class="at">levels =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>),<span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Primaria"</span>, <span class="st">"Secundaria"</span>, <span class="st">"Bachiller"</span>, <span class="st">"Grado"</span>, <span class="st">"Máster"</span>, <span class="st">"Doctorado+"</span>)),</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">situacion_laboral_pareja =</span> <span class="fu">factor</span>(situacion_laboral_pareja,<span class="at">levels =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>),<span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Activa"</span>, <span class="st">"Parada"</span>, <span class="st">"Baja"</span>, <span class="st">"Jubilado"</span>, <span class="st">"Estudiante"</span>))</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Verificamos</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(datos_combinados[, <span class="fu">c</span>(<span class="st">"nacional"</span>, <span class="st">"profesion"</span>, <span class="st">"nivel_de_estudios"</span>, <span class="st">"situacion_laboral_pareja"</span>)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>            nacional       profesion    nivel_de_estudios
+ Española       :757   Enfermera: 79   Primaria  : 24    
+ Extranjera     : 41   Oficina  :548   Secundaria: 40    
+ Otras/No consta:  2   Médico   : 88   Bachiller : 73    
+                       Profesora: 85   Grado     :448    
+                       Otros    :  0   Máster    :144    
+                                       Doctorado+: 71    
+ situacion_laboral_pareja
+ Activa    :728          
+ Parada    : 40          
+ Baja      :  5          
+ Jubilado  : 10          
+ Estudiante:  8          
+ NA's      :  9          </code></pre>
+</div>
+</div>
+</section>
+<section id="fase-3-nuevas-variables" class="level1">
+<h1>FASE 3: Nuevas variables</h1>
+<p>##Recalcular colesterol total con fórmula</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>datos_combinados <span class="ot">&lt;-</span> datos_combinados <span class="sc">%&gt;%</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">colesterol_total =</span> ldl <span class="sc">+</span> hdl <span class="sc">+</span> (trigliceridos <span class="sc">/</span> <span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>##Variable tipo de ginecólogo</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>datos_combinados <span class="ot">&lt;-</span> datos_combinados <span class="sc">%&gt;%</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mutate</span>(</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">tipo_ginecologo =</span> <span class="fu">case_when</span>(gine_publico <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> gine_privado <span class="sc">==</span> <span class="dv">0</span> <span class="sc">~</span> <span class="st">"Público"</span>,</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>    gine_publico <span class="sc">==</span> <span class="dv">0</span> <span class="sc">&amp;</span> gine_privado <span class="sc">==</span> <span class="dv">1</span> <span class="sc">~</span> <span class="st">"Privado"</span>,</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>    gine_publico <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> gine_privado <span class="sc">==</span> <span class="dv">1</span> <span class="sc">~</span> <span class="st">"Ambos"</span>,</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_character_</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(datos_combinados[, <span class="fu">c</span>(<span class="st">"colesterol_total"</span>, <span class="st">"tipo_ginecologo"</span>)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 2
+  colesterol_total tipo_ginecologo
+             &lt;dbl&gt; &lt;chr&gt;          
+1             198. Público        
+2             209. Público        
+3             201. Ambos          
+4             195. Ambos          
+5             180. Ambos          
+6             238. Ambos          </code></pre>
+</div>
+</div>
+</section>
+<section id="fase-4-análisis" class="level1">
+<h1>FASE 4: Análisis</h1>
+<p>##Tabla general</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>datos_combinados <span class="sc">%&gt;%</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>codigo, <span class="sc">-</span>fecha_de_nacimiento, <span class="sc">-</span>ocupacion_habitual_pareja) <span class="sc">%&gt;%</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tbl_summary</span>(<span class="at">statistic =</span> <span class="fu">list</span>(<span class="fu">all_continuous</span>() <span class="sc">~</span> <span class="st">"{mean} ± {sd}"</span>,<span class="fu">all_categorical</span>() <span class="sc">~</span> <span class="st">"{n} ({p}%)"</span>),</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">missing =</span> <span class="st">"no"</span></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="wldjnbdfcp" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#wldjnbdfcp table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#wldjnbdfcp thead, #wldjnbdfcp tbody, #wldjnbdfcp tfoot, #wldjnbdfcp tr, #wldjnbdfcp td, #wldjnbdfcp th {
+  border-style: none;
+}
+
+#wldjnbdfcp p {
+  margin: 0;
+  padding: 0;
+}
+
+#wldjnbdfcp .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#wldjnbdfcp .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#wldjnbdfcp .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#wldjnbdfcp .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#wldjnbdfcp .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#wldjnbdfcp .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wldjnbdfcp .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#wldjnbdfcp .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#wldjnbdfcp .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#wldjnbdfcp .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#wldjnbdfcp .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#wldjnbdfcp .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#wldjnbdfcp .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#wldjnbdfcp .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#wldjnbdfcp .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#wldjnbdfcp .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#wldjnbdfcp .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#wldjnbdfcp .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#wldjnbdfcp .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wldjnbdfcp .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#wldjnbdfcp .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#wldjnbdfcp .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#wldjnbdfcp .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wldjnbdfcp .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#wldjnbdfcp .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#wldjnbdfcp .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wldjnbdfcp .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wldjnbdfcp .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#wldjnbdfcp .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wldjnbdfcp .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#wldjnbdfcp .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#wldjnbdfcp .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#wldjnbdfcp .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wldjnbdfcp .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#wldjnbdfcp .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#wldjnbdfcp .gt_left {
+  text-align: left;
+}
+
+#wldjnbdfcp .gt_center {
+  text-align: center;
+}
+
+#wldjnbdfcp .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#wldjnbdfcp .gt_font_normal {
+  font-weight: normal;
+}
+
+#wldjnbdfcp .gt_font_bold {
+  font-weight: bold;
+}
+
+#wldjnbdfcp .gt_font_italic {
+  font-style: italic;
+}
+
+#wldjnbdfcp .gt_super {
+  font-size: 65%;
+}
+
+#wldjnbdfcp .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#wldjnbdfcp .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#wldjnbdfcp .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#wldjnbdfcp .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#wldjnbdfcp .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#wldjnbdfcp .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#wldjnbdfcp .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#wldjnbdfcp .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#wldjnbdfcp div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th id="label" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Characteristic</strong></th>
+<th id="stat_0" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>N = 800</strong><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">peso_de_la_madre</td>
+<td class="gt_row gt_center" headers="stat_0">84 ± 15</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">area_de_salud</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Avilés</td>
+<td class="gt_row gt_center" headers="stat_0">145 (18%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Cangas</td>
+<td class="gt_row gt_center" headers="stat_0">58 (7.3%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Gijón</td>
+<td class="gt_row gt_center" headers="stat_0">105 (13%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Jarrio</td>
+<td class="gt_row gt_center" headers="stat_0">91 (11%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Langreo</td>
+<td class="gt_row gt_center" headers="stat_0">89 (11%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Mieres</td>
+<td class="gt_row gt_center" headers="stat_0">104 (13%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Oriente</td>
+<td class="gt_row gt_center" headers="stat_0">86 (11%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Oviedo</td>
+<td class="gt_row gt_center" headers="stat_0">122 (15%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">responde</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;1</td>
+<td class="gt_row gt_center" headers="stat_0">800 (100%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">hospital</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;CABUEÑES</td>
+<td class="gt_row gt_center" headers="stat_0">109 (14%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;CANGAS NARCEA</td>
+<td class="gt_row gt_center" headers="stat_0">60 (7.5%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;CENTRAL</td>
+<td class="gt_row gt_center" headers="stat_0">128 (16%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;JARRIO</td>
+<td class="gt_row gt_center" headers="stat_0">93 (12%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;MIERES</td>
+<td class="gt_row gt_center" headers="stat_0">105 (13%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;ORIENTE</td>
+<td class="gt_row gt_center" headers="stat_0">86 (11%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;SAN AGUSTIN</td>
+<td class="gt_row gt_center" headers="stat_0">139 (17%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;VALLE NALON</td>
+<td class="gt_row gt_center" headers="stat_0">80 (10%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">edad_de_la_madre</td>
+<td class="gt_row gt_center" headers="stat_0">30.4 ± 5.1</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">peso_al_nacimiento</td>
+<td class="gt_row gt_center" headers="stat_0">3,333 ± 489</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">tiempo_de_embarazo_al_parto</td>
+<td class="gt_row gt_center" headers="stat_0">279.4 ± 4.7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">lactancia_materna</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
+<td class="gt_row gt_center" headers="stat_0">433 (54%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Si</td>
+<td class="gt_row gt_center" headers="stat_0">367 (46%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">otro_tipo_de_lactancia</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
+<td class="gt_row gt_center" headers="stat_0">225 (28%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Si</td>
+<td class="gt_row gt_center" headers="stat_0">575 (72%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">lactancia_en_embarazo_anterior</td>
+<td class="gt_row gt_center" headers="stat_0">277 (64%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">gine_publico</td>
+<td class="gt_row gt_center" headers="stat_0">744 (93%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">gine_privado</td>
+<td class="gt_row gt_center" headers="stat_0">85 (11%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">clases_de_parto</td>
+<td class="gt_row gt_center" headers="stat_0">526 (66%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">numero_de_clases_de_parto</td>
+<td class="gt_row gt_center" headers="stat_0">8.8 ± 6.1</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">cesarea</td>
+<td class="gt_row gt_center" headers="stat_0">167 (21%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">biberon</td>
+<td class="gt_row gt_center" headers="stat_0">427 (56%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">numero_de_hijos</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;1</td>
+<td class="gt_row gt_center" headers="stat_0">497 (62%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;2</td>
+<td class="gt_row gt_center" headers="stat_0">259 (32%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;3</td>
+<td class="gt_row gt_center" headers="stat_0">35 (4.4%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;4</td>
+<td class="gt_row gt_center" headers="stat_0">6 (0.8%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;5</td>
+<td class="gt_row gt_center" headers="stat_0">2 (0.3%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;8</td>
+<td class="gt_row gt_center" headers="stat_0">1 (0.1%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">nacional</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Española</td>
+<td class="gt_row gt_center" headers="stat_0">757 (95%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Extranjera</td>
+<td class="gt_row gt_center" headers="stat_0">41 (5.1%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Otras/No consta</td>
+<td class="gt_row gt_center" headers="stat_0">2 (0.3%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">profesion</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Enfermera</td>
+<td class="gt_row gt_center" headers="stat_0">79 (9.9%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Oficina</td>
+<td class="gt_row gt_center" headers="stat_0">548 (69%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Médico</td>
+<td class="gt_row gt_center" headers="stat_0">88 (11%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Profesora</td>
+<td class="gt_row gt_center" headers="stat_0">85 (11%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Otros</td>
+<td class="gt_row gt_center" headers="stat_0">0 (0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">nivel_de_estudios</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Primaria</td>
+<td class="gt_row gt_center" headers="stat_0">24 (3.0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Secundaria</td>
+<td class="gt_row gt_center" headers="stat_0">40 (5.0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Bachiller</td>
+<td class="gt_row gt_center" headers="stat_0">73 (9.1%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Grado</td>
+<td class="gt_row gt_center" headers="stat_0">448 (56%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Máster</td>
+<td class="gt_row gt_center" headers="stat_0">144 (18%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Doctorado+</td>
+<td class="gt_row gt_center" headers="stat_0">71 (8.9%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">pareja</td>
+<td class="gt_row gt_center" headers="stat_0">791 (99%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">situacion_laboral_pareja</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Activa</td>
+<td class="gt_row gt_center" headers="stat_0">728 (92%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Parada</td>
+<td class="gt_row gt_center" headers="stat_0">40 (5.1%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Baja</td>
+<td class="gt_row gt_center" headers="stat_0">5 (0.6%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Jubilado</td>
+<td class="gt_row gt_center" headers="stat_0">10 (1.3%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Estudiante</td>
+<td class="gt_row gt_center" headers="stat_0">8 (1.0%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">tension_arterial_media</td>
+<td class="gt_row gt_center" headers="stat_0">109 ± 10</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">glucosa</td>
+<td class="gt_row gt_center" headers="stat_0">96 ± 14</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">hdl</td>
+<td class="gt_row gt_center" headers="stat_0">56 ± 12</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">ldl</td>
+<td class="gt_row gt_center" headers="stat_0">122 ± 28</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">trigliceridos</td>
+<td class="gt_row gt_center" headers="stat_0">126 ± 69</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">creatinina</td>
+<td class="gt_row gt_center" headers="stat_0">0.91 ± 0.20</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">hemoglobina</td>
+<td class="gt_row gt_center" headers="stat_0">13.55 ± 1.19</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">colesterol_total</td>
+<td class="gt_row gt_center" headers="stat_0">203 ± 33</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">tipo_ginecologo</td>
+<td class="gt_row gt_center" headers="stat_0"><br>
+</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ambos</td>
+<td class="gt_row gt_center" headers="stat_0">29 (3.6%)</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Privado</td>
+<td class="gt_row gt_center" headers="stat_0">56 (7.0%)</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Público</td>
+<td class="gt_row gt_center" headers="stat_0">715 (89%)</td>
+</tr>
+</tbody><tfoot class="gt_footnotes">
+<tr class="odd">
+<td colspan="2" class="gt_footnote"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> Mean ± SD; n (%)</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</div>
+<p>##Histogramas de TODOS parámetros de laboratorio</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lista de variables de laboratorio por columnas igual que en una paso anterior</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>parametros <span class="ot">&lt;-</span> <span class="fu">names</span>(datos_combinados)[<span class="dv">26</span><span class="sc">:</span><span class="dv">33</span>]</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a><span class="co"># histograma por parámetro</span></span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (var <span class="cf">in</span> parametros) {</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(datos_combinados, <span class="fu">aes_string</span>(<span class="at">x =</span> var)) <span class="sc">+</span></span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_histogram</span>(<span class="at">bins =</span> <span class="dv">30</span>, <span class="at">fill =</span> <span class="st">"steelblue"</span>, <span class="at">color =</span> <span class="st">"white"</span>) <span class="sc">+</span></span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="fu">paste</span>(<span class="st">"Histograma de"</span>, var), <span class="at">x =</span> var, <span class="at">y =</span> <span class="st">"Frecuencia"</span>) <span class="sc">+</span></span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_minimal</span>()</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: `aes_string()` was deprecated in ggplot2 3.0.0.
+ℹ Please use tidy evaluation idioms with `aes()`.
+ℹ See also `vignette("ggplot2-in-packages")` for more information.</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/figure-html/unnamed-chunk-12-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 3 rows containing non-finite outside the scale range
+(`stat_bin()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/figure-html/unnamed-chunk-12-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 2 rows containing non-finite outside the scale range
+(`stat_bin()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/figure-html/unnamed-chunk-12-4.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/figure-html/unnamed-chunk-12-5.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/figure-html/unnamed-chunk-12-6.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 1 row containing non-finite outside the scale range
+(`stat_bin()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/figure-html/unnamed-chunk-12-7.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 4 rows containing non-finite outside the scale range
+(`stat_bin()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/figure-html/unnamed-chunk-12-8.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co">#aunque el parametro colesterol_total ya engloba tanto a hdl,ldl, y triglicericos, he calculado sus histogramas igualmente ya que así lo he interpretado según:"histograma para cada uno de los parámetros de laboratorio."</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="fase-5-preguntas" class="level1">
+<h1>FASE 5: Preguntas</h1>
+<p>##% de cesáreas</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>porcentaje_cesareas <span class="ot">&lt;-</span> <span class="fu">mean</span>(datos_combinados<span class="sc">$</span>cesarea <span class="sc">==</span> <span class="dv">1</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="dv">100</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>porcentaje_cesareas</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 20.875</code></pre>
+</div>
+</div>
+<p>##Edad media con y sin cesárea</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>datos_combinados <span class="sc">%&gt;%</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="fu">group_by</span>(cesarea) <span class="sc">%&gt;%</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summarise</span>(<span class="at">media_edad =</span> <span class="fu">mean</span>(edad_de_la_madre, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  cesarea media_edad
+    &lt;dbl&gt;      &lt;dbl&gt;
+1       0       30.1
+2       1       31.3</code></pre>
+</div>
+</div>
+<p>##Gráfico de cajas para edad según cesárea</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_combinados, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">as.factor</span>(cesarea), <span class="at">y =</span> edad_de_la_madre)) <span class="sc">+</span></span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_boxplot</span>(<span class="at">fill =</span> <span class="st">"lightblue"</span>) <span class="sc">+</span></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Cesárea (0 = No, 1 = Sí)"</span>, <span class="at">y =</span> <span class="st">"Edad de la madre"</span>, <span class="at">title =</span> <span class="st">"Edad según cesárea"</span>) <span class="sc">+</span></span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>##% de cesáreas entre mujeres que fueron a clases de parto</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>datos_combinados <span class="sc">%&gt;%</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="fu">filter</span>(clases_de_parto <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summarise</span>(<span class="at">porcentaje_cesarea =</span> <span class="fu">mean</span>(cesarea <span class="sc">==</span> <span class="dv">1</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">*</span> <span class="dv">100</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 1
+  porcentaje_cesarea
+               &lt;dbl&gt;
+1               19.8</code></pre>
+</div>
+</div>
+<p>##Grafico de Dispersión entre peso de la madre y tensión arterial</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(datos_combinados, <span class="fu">aes</span>(<span class="at">x =</span> peso_de_la_madre, <span class="at">y =</span> tension_arterial_media)) <span class="sc">+</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"darkblue"</span>, <span class="at">alpha =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Peso de la madre"</span>, <span class="at">y =</span> <span class="st">"Tensión arterial media"</span>,</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">title =</span> <span class="st">"Relación entre peso y tensión arterial"</span>) <span class="sc">+</span></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="AngelBermudez-ProgramacionEntornoTrabajo-Unidades456_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

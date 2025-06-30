@@ -1,0 +1,195 @@
+---
+title: "Informe Feedback R"
+format: html
+editor: visual
+---
+
+# FASE 1: Carga y unión de datos
+
+##Cargar librerías necesarias
+
+```{r}
+# Instalar paquetes
+# install.packages("readxl")
+# install.packages("dplyr")
+# install.packages("janitor")
+#install.packages("gtsummary")
+#install.packages("ggplot2")
+
+# Carga
+library(readxl)
+library(dplyr)
+library(janitor)
+library(gtsummary)
+library(ggplot2)
+```
+##Cargar los datos 
+
+```{r}
+# hoja 1
+datos_demograficos <- readxl::read_excel("datos entregable.xlsx", sheet = 1)
+
+# hoja 2
+datos_laboratorio <- readxl::read_excel("datos entregable.xlsx", sheet = 2)
+```
+##Limpiar nombres de columnas y unir datos
+
+```{r}
+# Limpiar nombres 
+datos_demograficos <- janitor::clean_names(datos_demograficos)
+datos_laboratorio <- janitor::clean_names(datos_laboratorio)
+
+# Unimos por la columna 'codigo'
+datos_combinados <- dplyr::inner_join(datos_demograficos, datos_laboratorio, by = "codigo")
+head(datos_combinados)
+```
+# FASE 2: Limpieza  de datos
+
+##Eliminar filas sin datos de laboratorio 
+
+```{r}
+# Filtramos las que tengan al menos un dato no nulo en columnas 26 a 33 que es donde están los datos de laboratorio
+datos_combinados <- datos_combinados %>%
+filter(rowSums(!is.na(across(26:33))) > 0)
+
+# cuántas filas quedan
+nrow(datos_combinados)
+
+#he hecho esto para que se vea que sea realizar el código, sin embargo, el resultado ha sido 800 filas lo que indica que obviamente se han quedado las mismas que había en el conjunto de datos combinado porque anteriormente hemos hecho un join en el cual ya se han descartado aquellas filas que si estan en la hoja de demograficos pero no en la de laboratorio al no coincidir sus códigos.
+```
+##Valores extremos
+
+```{r}
+#  resumen 
+summary(datos_combinados)
+#  tipo de datos 
+str(datos_combinados)
+
+#me doy cuenta de algunos valores inususales, por ejemplo:
+#ldl: máximo de 17204 (debería estar entre 50–200).
+#colesterol_total: máximo 172116.84,(400 ya es muy alto)
+#hemoglobina: máximo 70.25 (lo normal sería 11–16).
+#biberon: máximo 5, debería ser binaria 
+```
+##Reemplazar valores anómalos por NA
+
+```{r}
+# limpiamos segun lo observado en el paso anterior
+datos_combinados <- datos_combinados %>%
+mutate(
+  ldl = ifelse(ldl > 300, NA, ldl),
+  colesterol_total = ifelse(colesterol_total > 300, NA, colesterol_total),
+  hemoglobina = ifelse(hemoglobina > 20, NA, hemoglobina),
+  biberon = ifelse(biberon > 1, NA, biberon)
+)
+# Verificamos 
+summary(datos_combinados[, c("ldl", "colesterol_total", "hemoglobina", "biberon")])
+```
+##Trabajo con variables categóricas
+
+```{r}
+datos_combinados <- datos_combinados %>%
+mutate(
+  nacional = factor(nacional,levels = c(1, 2, 3),labels = c("Española", "Extranjera", "Otras/No consta")),
+  profesion = factor(profesion,levels = c(1, 2, 3, 4, 5),labels = c("Enfermera", "Oficina", "Médico", "Profesora", "Otros")),
+  nivel_de_estudios = factor(nivel_de_estudios,levels = c(1, 2, 3, 4, 5, 6),labels = c("Primaria", "Secundaria", "Bachiller", "Grado", "Máster", "Doctorado+")),
+  situacion_laboral_pareja = factor(situacion_laboral_pareja,levels = c(1, 2, 3, 4, 5),labels = c("Activa", "Parada", "Baja", "Jubilado", "Estudiante"))
+)
+# Verificamos
+summary(datos_combinados[, c("nacional", "profesion", "nivel_de_estudios", "situacion_laboral_pareja")])
+
+```
+# FASE 3: Nuevas variables
+
+##Recalcular colesterol total con fórmula
+
+```{r}
+datos_combinados <- datos_combinados %>%
+  mutate(colesterol_total = ldl + hdl + (trigliceridos / 5))
+```
+##Variable tipo de ginecólogo
+
+```{r}
+datos_combinados <- datos_combinados %>%
+mutate(
+  tipo_ginecologo = case_when(gine_publico == 1 & gine_privado == 0 ~ "Público",
+    gine_publico == 0 & gine_privado == 1 ~ "Privado",
+    gine_publico == 1 & gine_privado == 1 ~ "Ambos",
+    TRUE ~ NA_character_
+    )
+  )
+```
+
+```{r}
+head(datos_combinados[, c("colesterol_total", "tipo_ginecologo")])
+```
+
+# FASE 4: Análisis 
+
+##Tabla general
+
+```{r}
+datos_combinados %>%
+  select(-codigo, -fecha_de_nacimiento, -ocupacion_habitual_pareja) %>%
+  tbl_summary(statistic = list(all_continuous() ~ "{mean} ± {sd}",all_categorical() ~ "{n} ({p}%)"),
+    missing = "no"
+  )
+```
+##Histogramas de TODOS parámetros de laboratorio
+
+```{r}
+
+# Lista de variables de laboratorio por columnas igual que en una paso anterior
+parametros <- names(datos_combinados)[26:33]
+
+# histograma por parámetro
+for (var in parametros) {
+  print(
+    ggplot(datos_combinados, aes_string(x = var)) +
+    geom_histogram(bins = 30, fill = "steelblue", color = "white") +
+    labs(title = paste("Histograma de", var), x = var, y = "Frecuencia") +
+    theme_minimal()
+  )
+}
+#aunque el parametro colesterol_total ya engloba tanto a hdl,ldl, y triglicericos, he calculado sus histogramas igualmente ya que así lo he interpretado según:"histograma para cada uno de los parámetros de laboratorio."
+```
+# FASE 5: Preguntas
+
+##% de cesáreas
+
+```{r}
+porcentaje_cesareas <- mean(datos_combinados$cesarea == 1, na.rm = TRUE) * 100
+porcentaje_cesareas
+```
+##Edad media con y sin cesárea
+
+```{r}
+datos_combinados %>%
+group_by(cesarea) %>%
+summarise(media_edad = mean(edad_de_la_madre, na.rm = TRUE))
+```
+##Gráfico de cajas para edad según cesárea
+
+```{r}
+ggplot(datos_combinados, aes(x = as.factor(cesarea), y = edad_de_la_madre)) +
+geom_boxplot(fill = "lightblue") +
+labs(x = "Cesárea (0 = No, 1 = Sí)", y = "Edad de la madre", title = "Edad según cesárea") +
+theme_minimal()
+```
+##% de cesáreas entre mujeres que fueron a clases de parto
+
+```{r}
+datos_combinados %>%
+filter(clases_de_parto == 1) %>%
+summarise(porcentaje_cesarea = mean(cesarea == 1, na.rm = TRUE) * 100)
+```
+##Grafico de Dispersión entre peso de la madre y tensión arterial
+
+```{r}
+ggplot(datos_combinados, aes(x = peso_de_la_madre, y = tension_arterial_media)) +
+geom_point(color = "darkblue", alpha = 0.6) +
+geom_smooth(method = "lm", color = "red") +
+labs(x = "Peso de la madre", y = "Tensión arterial media",
+         title = "Relación entre peso y tensión arterial") +
+theme_minimal()
+```
